@@ -27,7 +27,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(--text);
-  font-family:'DM Sans',sans-serif;font-size:16px;-webkit-font-smoothing:antialiased}
+  font-family:'DM Sans',sans-serif;font-size:16px;-webkit-font-smoothing:antialiased;cursor:default}
 #app{height:100%;display:flex;flex-direction:column;
   padding-top:var(--safe-top);padding-bottom:var(--safe-bottom)}
 
@@ -59,25 +59,27 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
   color:var(--text3);margin-bottom:10px}
 
 /* Unit chips – horizontal scroll row */
-.unit-scroll{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;
-  padding-bottom:4px;margin-bottom:20px;scrollbar-width:none}
-.unit-scroll::-webkit-scrollbar{display:none}
-.unit-chip{flex-shrink:0;background:var(--surface);border:.5px solid var(--border);
-  border-radius:40px;padding:8px 16px;cursor:pointer;
-  display:flex;align-items:center;gap:8px;
-  transition:background .15s,border-color .15s;-webkit-user-select:none}
-.unit-chip:active{transform:scale(.97)}
-.unit-chip.selected{border-color:var(--accent);background:rgba(56,201,176,.08)}
-.unit-chip .chip-icon{font-size:16px;line-height:1}
-.unit-chip .chip-label{font-size:13px;font-weight:500;color:var(--text);white-space:nowrap}
-.unit-chip .chip-count{font-size:11px;color:var(--text3);white-space:nowrap}
-.unit-chip.all-chip{border-color:rgba(56,201,176,.3)}
+.unit-grid-home{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px}
+.unit-card-home{background:var(--surface);border:.5px solid var(--border);
+  border-radius:var(--radius-sm);padding:14px 16px;cursor:pointer;
+  display:flex;align-items:center;gap:12px;
+  transition:background .15s,border-color .15s;-webkit-user-select:none;user-select:none}
+.unit-card-home:active{transform:scale(.98);background:var(--surface2)}
+.unit-card-home.selected{border-color:var(--accent);background:rgba(56,201,176,.08)}
+.unit-card-home.all-card{grid-column:1/-1;border-color:rgba(56,201,176,.25)}
+.unit-card-home .uc-icon{font-size:22px;line-height:1;flex-shrink:0}
+.unit-card-home .uc-info{flex:1;min-width:0}
+.unit-card-home .uc-title{font-size:13px;font-weight:500;color:var(--text);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.unit-card-home .uc-sub{font-size:11px;color:var(--text3);margin-top:2px}
+.unit-card-home .uc-count{font-size:12px;font-weight:600;color:var(--text3);flex-shrink:0}
+.unit-card-home.selected .uc-count{color:var(--accent)}
 
 /* Theme cards – 2-col grid */
 .theme-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px}
 .theme-card{background:var(--surface);border:.5px solid var(--border);
   border-radius:var(--radius-sm);padding:12px 14px;cursor:pointer;
-  transition:background .15s,border-color .15s;-webkit-user-select:none}
+  transition:background .15s,border-color .15s;-webkit-user-select:none;user-select:none}
 .theme-card:active{transform:scale(.97)}
 .theme-card.selected{border-color:var(--accent);background:rgba(56,201,176,.06)}
 .theme-card .tc-icon{font-size:20px;margin-bottom:6px}
@@ -334,42 +336,8 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 
   <div class="section-label">Unidades</div>
-  <div class="unit-scroll" id="unit-scroll">
-    <div class="unit-chip all-chip selected" data-unit="all" onclick="selectUnit('all')">
-      <span class="chip-icon">🌊</span>
-      <span class="chip-label">Alle</span>
-      <span class="chip-count" id="chip-count-all">787</span>
-    </div>
-    <div class="unit-chip" data-unit="1" onclick="selectUnit('1')">
-      <span class="chip-icon">👋</span>
-      <span class="chip-label">U1</span>
-      <span class="chip-count" id="chip-count-1"></span>
-    </div>
-    <div class="unit-chip" data-unit="2" onclick="selectUnit('2')">
-      <span class="chip-icon">🏙</span>
-      <span class="chip-label">U2</span>
-      <span class="chip-count" id="chip-count-2"></span>
-    </div>
-    <div class="unit-chip" data-unit="3" onclick="selectUnit('3')">
-      <span class="chip-icon">🗺</span>
-      <span class="chip-label">U3</span>
-      <span class="chip-count" id="chip-count-3"></span>
-    </div>
-    <div class="unit-chip" data-unit="4" onclick="selectUnit('4')">
-      <span class="chip-icon">🍽</span>
-      <span class="chip-label">U4</span>
-      <span class="chip-count" id="chip-count-4"></span>
-    </div>
-    <div class="unit-chip" data-unit="5" onclick="selectUnit('5')">
-      <span class="chip-icon">🛍</span>
-      <span class="chip-label">U5</span>
-      <span class="chip-count" id="chip-count-5"></span>
-    </div>
-    <div class="unit-chip" data-unit="6" onclick="selectUnit('6')">
-      <span class="chip-icon">📅</span>
-      <span class="chip-label">U6</span>
-      <span class="chip-count" id="chip-count-6"></span>
-    </div>
+  <div class="unit-grid-home" id="unit-grid-home">
+    <!-- populated by renderUnitCards() -->
   </div>
 
   <div class="section-label">Themen-Sets</div>
@@ -521,7 +489,18 @@ const FALLBACK = {
   6:[{es:"despertarse",de:"aufwachen"},{es:"levantarse",de:"aufstehen"},{es:"ducharse",de:"duschen"},{es:"vestirse",de:"sich anziehen"},{es:"acostarse",de:"schlafen gehen"},{es:"siempre",de:"immer"},{es:"nunca",de:"nie"},{es:"a veces",de:"manchmal"},{es:"la asignatura",de:"das Fach"},{es:"el recreo",de:"die Pause"}]
 };
 let VOCAB = FALLBACK;
-let THEMES = [];
+
+const THEMES_FALLBACK = [
+  {id:'reflexive',  emoji:'🔄', title:'Reflexive Verben',        description:'Alle reflexiven Verben', color:'purple', chapters:['6A','6B','6C','6D'], count:119},
+  {id:'routine',    emoji:'⏰', title:'Tagesroutine & Häufigkeit',description:'Aktivitäten & Adverbien',color:'teal',   chapters:['6','6A','4D'],       count:147},
+  {id:'school',     emoji:'📚', title:'Schule & Instituto',       description:'Fächer, Objekte, Räume', color:'blue',   chapters:['6A'],                 count:92},
+  {id:'food',       emoji:'🍽', title:'Essen & Trinken',          description:'Speisen & Restaurant',   color:'amber',  chapters:['4A','4B','4C','4D'],  count:206},
+  {id:'jobs_family',emoji:'👨‍👩‍👧',title:'Berufe & Familie',         description:'Jobs & Verwandtschaft',  color:'coral',  chapters:['2A','2B','2C'],       count:78},
+  {id:'clothing',   emoji:'👕', title:'Kleidung & Farben',        description:'Mode & Materialien',     color:'pink',   chapters:['5A','5B','5C','5D'],  count:120},
+  {id:'verbs',      emoji:'⚡', title:'Verben – Alltag',          description:'Alle Infinitive U1–U6',  color:'green',  chapters:['1A','1B','1C','2A','2B','2C','3A','3B','4D','6','6A','6B'], count:382},
+  {id:'phrases',    emoji:'💬', title:'Fragen & Ausdrücke',       description:'Kommunikative Phrasen',  color:'teal',   chapters:['1A','1B','1C','1D','3A','3B','3C','4C'], count:256},
+];
+let THEMES = THEMES_FALLBACK;
 let CHAPTERS = {}; // {unit: {chapterTag: [vocab]}}
 let vocabLoaded = false;
 
@@ -550,7 +529,7 @@ async function loadVocab() {
       if (el) el.textContent = built[k].length;
     }
     VOCAB = built;
-    THEMES = data.themes || [];
+    THEMES = (data.themes && data.themes.length) ? data.themes : THEMES_FALLBACK;
     vocabLoaded = true;
 
     // Update totals
@@ -560,7 +539,8 @@ async function loadVocab() {
     const chipAll = document.getElementById('chip-count-all');
     if (chipAll) chipAll.textContent = total;
 
-    // Render theme grid
+    // Render unit cards + theme grid
+    renderUnitCards();
     renderThemeGrid();
     console.log('vocab.json loaded:', total, 'entries,', THEMES.length, 'themes');
   } catch(e) {
@@ -570,6 +550,37 @@ async function loadVocab() {
       CHAPTERS[parseInt(k)] = { [k+'A']: FALLBACK[parseInt(k)] };
     }
   }
+}
+
+function renderUnitCards() {
+  const grid = document.getElementById('unit-grid-home');
+  if (!grid) return;
+  const UNIT_META = {
+    all: {icon:'🌊', title:'Alle Unidades', sub:'Unidad 1–6'},
+    1:   {icon:'👋', title:'Unidad 1', sub:'Primeras palabras'},
+    2:   {icon:'🏙', title:'Unidad 2', sub:'Mi mundo'},
+    3:   {icon:'🗺', title:'Unidad 3', sub:'De viaje'},
+    4:   {icon:'🍽', title:'Unidad 4', sub:'¡Buen provecho!'},
+    5:   {icon:'🛍', title:'Unidad 5', sub:'De compras'},
+    6:   {icon:'📅', title:'Unidad 6', sub:'Así es la vida'},
+  };
+  const allTotal = Object.values(VOCAB).flat().length;
+  const units = ['all', 1, 2, 3, 4, 5, 6];
+  grid.innerHTML = units.map(u => {
+    const m = UNIT_META[u];
+    const count = u === 'all' ? allTotal : (VOCAB[u] ? VOCAB[u].length : '—');
+    const isAll = u === 'all';
+    const sel = state.unit == u && state.selectionType === 'unit';
+    return `<div class="unit-card-home${isAll?' all-card':''}${sel?' selected':''}"
+      data-unit="${u}" onclick="selectUnit('${u}')">
+      <span class="uc-icon">${m.icon}</span>
+      <div class="uc-info">
+        <div class="uc-title">${m.title}</div>
+        <div class="uc-sub">${m.sub}</div>
+      </div>
+      <span class="uc-count" id="uc-count-${u}">${count}</span>
+    </div>`;
+  }).join('');
 }
 
 function renderThemeGrid() {
@@ -619,11 +630,9 @@ function selectUnit(u) {
   state.unit = u;
   state.selectionType = 'unit';
   state.themeId = null;
-  // Update chip UI
-  document.querySelectorAll('.unit-chip').forEach(c => {
-    c.classList.toggle('selected', c.dataset.unit === u);
+  document.querySelectorAll('.unit-card-home').forEach(c => {
+    c.classList.toggle('selected', c.dataset.unit == u);
   });
-  // Deselect themes
   document.querySelectorAll('.theme-card').forEach(c => c.classList.remove('selected'));
 }
 
@@ -631,11 +640,10 @@ function selectTheme(id) {
   state.themeId = id;
   state.selectionType = 'theme';
   state.unit = null;
-  // Update UI
   document.querySelectorAll('.theme-card').forEach(c => {
     c.classList.toggle('selected', c.dataset.theme === id);
   });
-  document.querySelectorAll('.unit-chip').forEach(c => c.classList.remove('selected'));
+  document.querySelectorAll('.unit-card-home').forEach(c => c.classList.remove('selected'));
 }
 
 function goSetup() {
@@ -1008,12 +1016,18 @@ function checkInstallBanner() {
 }
 
 // ══ INIT ═══════════════════════════════════════════════════════
-selectUnit('all');
 selectMode('mc');
 selectDir('es');
 selectCount(15);
 renderStats();
 checkInstallBanner();
+renderUnitCards();
+renderThemeGrid();
+// mark 'all' selected after cards rendered
+state.unit = 'all';
+state.selectionType = 'unit';
+const firstCard = document.querySelector('.unit-card-home[data-unit="all"]');
+if (firstCard) firstCard.classList.add('selected');
 loadVocab();
 
 if ('serviceWorker' in navigator) {
