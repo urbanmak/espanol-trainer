@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Español">
+<meta name="apple-mobile-web-app-title" content="Wave">
 <meta name="theme-color" content="#1a1a2e">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="manifest" href="manifest.json">
-<meta name="apple-mobile-web-app-title" content="Español">
+<meta name="apple-mobile-web-app-title" content="Wave">
 <meta name="apple-touch-startup-image" href="icon-512.png">
-<title>Español Trainer</title>
+<title>Wave</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -74,33 +74,57 @@
   }
 
   .home-header {
-    padding-top: 16px;
-    margin-bottom: 32px;
+    padding-top: 8px;
+    margin-bottom: 24px;
   }
-  .home-header .eyebrow {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
+  .home-header .logo-img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .home-header .lang-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .home-header .lang-badge {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 6px;
+    color: #04141f;
+    background: var(--accent);
+    padding: 3px 8px;
+    border-radius: 20px;
+    line-height: 1.4;
+    flex-shrink: 0;
   }
-  .home-header h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 1.1;
-    color: var(--text);
-  }
-  .home-header h1 em {
-    font-style: italic;
-    color: var(--accent);
-  }
-  .home-header p {
-    margin-top: 8px;
-    font-size: 14px;
+  .home-header .lang-label {
+    font-size: 13px;
+    font-weight: 500;
     color: var(--text2);
-    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .home-header .course-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+  }
+  .home-header .course-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--text3);
+    flex-shrink: 0;
+  }
+  .home-header .course-meta {
+    font-size: 12px;
+    color: var(--text3);
+    line-height: 1.4;
   }
 
   .stats-row {
@@ -665,9 +689,15 @@
   <!-- ══ HOME ══ -->
   <div id="screen-home" class="screen active">
     <div class="home-header">
-      <div class="eyebrow">Caminos 1 · Unidades 1–6</div>
-      <h1>Español<br><em>Trainer</em></h1>
-      <p>Vollständiges Vokabeltraining · 90 Vokabeln</p>
+      <img class="logo-img" src="wave-logo-header.png" alt="Wave – Dein Vokabel-Trainer">
+      <div class="lang-row">
+        <span class="lang-badge">ES</span>
+        <span class="lang-label">Español</span>
+      </div>
+      <div class="course-row">
+        <span class="course-dot"></span>
+        <span class="course-meta">Caminos 1 · Unidades 1–6 · <span id="header-total">787</span> Vokabeln</span>
+      </div>
     </div>
 
     <div class="stats-row">
@@ -879,6 +909,8 @@ async function loadVocab() {
     const total = Object.values(built).reduce((s,a)=>s+a.length,0);
     const subAll = document.getElementById('sub-all');
     if (subAll) subAll.textContent = total + ' Vokabeln · Unidad 1–' + Object.keys(units).length;
+    const hdr = document.getElementById('header-total');
+    if (hdr) hdr.textContent = total;
     console.log('vocab.json loaded: ' + total + ' entries');
   } catch(e) {
     console.warn('vocab.json not found – using fallback vocab. Error:', e.message);
