@@ -2,13 +2,15 @@
   "name": "Español Trainer",
   "short_name": "Español",
   "description": "Spanisch Vokabeltrainer – Caminos 1",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#0f0f1a",
-  "theme_color": "#0f0f1a",
+  "background_color": "#04141f",
+  "theme_color": "#04141f",
   "orientation": "portrait",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "favicon-32.png",       "sizes": "32x32",   "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-192.png",         "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png",         "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }
