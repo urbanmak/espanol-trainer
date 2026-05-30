@@ -841,111 +841,47 @@
 </div>
 
 <script>
-// ══ VOCABULARY DATA ══════════════════════════════════════════════
-const VOCAB = {
-  1: [
-    {es:"hola", de:"hallo"},
-    {es:"buenos días", de:"guten Morgen"},
-    {es:"buenas tardes", de:"guten Nachmittag / guten Tag"},
-    {es:"buenas noches", de:"guten Abend / gute Nacht"},
-    {es:"adiós", de:"auf Wiedersehen / tschüss"},
-    {es:"¿cómo te llamas?", de:"wie heißt du?"},
-    {es:"me llamo…", de:"ich heiße…"},
-    {es:"¿de dónde eres?", de:"woher kommst du?"},
-    {es:"soy de…", de:"ich komme aus…"},
-    {es:"¿cuántos años tienes?", de:"wie alt bist du?"},
-    {es:"tengo … años", de:"ich bin … Jahre alt"},
-    {es:"el profesor / la profesora", de:"der Lehrer / die Lehrerin"},
-    {es:"el estudiante / la estudiante", de:"der Schüler / die Schülerin"},
-    {es:"hablar", de:"sprechen"},
-    {es:"escuchar", de:"zuhören / hören"},
-  ],
-  2: [
-    {es:"la familia", de:"die Familie"},
-    {es:"el padre / la madre", de:"der Vater / die Mutter"},
-    {es:"el hermano / la hermana", de:"der Bruder / die Schwester"},
-    {es:"el abuelo / la abuela", de:"der Großvater / die Großmutter"},
-    {es:"el hijo / la hija", de:"der Sohn / die Tochter"},
-    {es:"vivir", de:"wohnen / leben"},
-    {es:"trabajar", de:"arbeiten"},
-    {es:"la profesión", de:"der Beruf"},
-    {es:"el médico / la médica", de:"der Arzt / die Ärztin"},
-    {es:"el/la estudiante", de:"der/die Studierende"},
-    {es:"la ciudad", de:"die Stadt"},
-    {es:"el piso", de:"die Wohnung"},
-    {es:"grande / pequeño", de:"groß / klein"},
-    {es:"bonito / feo", de:"schön / hässlich"},
-    {es:"mucho / poco", de:"viel / wenig"},
-  ],
-  3: [
-    {es:"viajar", de:"reisen"},
-    {es:"el viaje", de:"die Reise"},
-    {es:"el aeropuerto", de:"der Flughafen"},
-    {es:"la estación de tren", de:"der Bahnhof"},
-    {es:"el billete", de:"das Ticket / die Fahrkarte"},
-    {es:"el hotel", de:"das Hotel"},
-    {es:"la calle", de:"die Straße"},
-    {es:"la plaza", de:"der Platz"},
-    {es:"el museo", de:"das Museum"},
-    {es:"la iglesia", de:"die Kirche"},
-    {es:"cerca de / lejos de", de:"in der Nähe von / weit von"},
-    {es:"a la derecha / a la izquierda", de:"rechts / links"},
-    {es:"todo recto", de:"geradeaus"},
-    {es:"el transporte público", de:"öffentliche Verkehrsmittel"},
-    {es:"el metro", de:"die U-Bahn"},
-  ],
-  4: [
-    {es:"el restaurante", de:"das Restaurant"},
-    {es:"la carta / el menú", de:"die Speisekarte / das Menü"},
-    {es:"el desayuno", de:"das Frühstück"},
-    {es:"el almuerzo", de:"das Mittagessen"},
-    {es:"la cena", de:"das Abendessen"},
-    {es:"el primer plato", de:"die Vorspeise"},
-    {es:"el segundo plato", de:"das Hauptgericht"},
-    {es:"el postre", de:"die Nachspeise"},
-    {es:"¿qué desea tomar?", de:"was möchten Sie nehmen?"},
-    {es:"la cuenta, por favor", de:"die Rechnung, bitte"},
-    {es:"rico / sabroso", de:"lecker / schmackhaft"},
-    {es:"tener hambre", de:"Hunger haben"},
-    {es:"tener sed", de:"Durst haben"},
-    {es:"el agua", de:"das Wasser"},
-    {es:"el vino / la cerveza", de:"der Wein / das Bier"},
-  ],
-  5: [
-    {es:"ir de tiendas", de:"einkaufen gehen"},
-    {es:"la prenda (de ropa)", de:"das Kleidungsstück"},
-    {es:"la camiseta", de:"das T-Shirt"},
-    {es:"los pantalones", de:"die Hose"},
-    {es:"el vestido", de:"das Kleid"},
-    {es:"la chaqueta", de:"die Jacke"},
-    {es:"los zapatos", de:"die Schuhe"},
-    {es:"¿cuánto cuesta?", de:"was kostet es?"},
-    {es:"la talla", de:"die Größe (Kleidung)"},
-    {es:"la oferta", de:"das Angebot / der Sonderpreis"},
-    {es:"caro / barato", de:"teuer / billig"},
-    {es:"pagar", de:"bezahlen"},
-    {es:"la tarjeta de crédito", de:"die Kreditkarte"},
-    {es:"el probador", de:"die Umkleidekabine"},
-    {es:"el color", de:"die Farbe"},
-  ],
-  6: [
-    {es:"la rutina diaria", de:"die Tagesroutine"},
-    {es:"despertarse", de:"aufwachen"},
-    {es:"levantarse", de:"aufstehen"},
-    {es:"ducharse", de:"duschen"},
-    {es:"vestirse", de:"sich anziehen"},
-    {es:"acostarse", de:"sich hinlegen / schlafen gehen"},
-    {es:"el instituto / el colegio", de:"die Schule / das Gymnasium"},
-    {es:"la asignatura", de:"das Unterrichtsfach"},
-    {es:"el recreo", de:"die Pause"},
-    {es:"hacer los deberes", de:"die Hausaufgaben machen"},
-    {es:"la mochila", de:"der Rucksack"},
-    {es:"el cuaderno", de:"das Heft"},
-    {es:"siempre / nunca", de:"immer / nie"},
-    {es:"a veces", de:"manchmal"},
-    {es:"normalmente", de:"normalerweise"},
-  ]
+// ══ VOCABULARY DATA – loaded from vocab.json ════════════════════
+// Fallback in case fetch fails (e.g. opened as file://)
+const VOCAB_FALLBACK = {
+  1: [{es:"hola",de:"hallo"},{es:"buenos días",de:"guten Morgen"},{es:"buenas tardes",de:"guten Nachmittag"},{es:"adiós",de:"auf Wiedersehen"},{es:"¿cómo te llamas?",de:"wie heißt du?"},{es:"me llamo…",de:"ich heiße…"},{es:"hablar",de:"sprechen"},{es:"escuchar",de:"hören"},{es:"el profesor",de:"der Lehrer"},{es:"soy de…",de:"ich komme aus…"}],
+  2: [{es:"la familia",de:"die Familie"},{es:"el padre",de:"der Vater"},{es:"la madre",de:"die Mutter"},{es:"el hermano",de:"der Bruder"},{es:"vivir",de:"wohnen"},{es:"trabajar",de:"arbeiten"},{es:"la ciudad",de:"die Stadt"},{es:"el piso",de:"die Wohnung"},{es:"grande",de:"groß"},{es:"pequeño",de:"klein"}],
+  3: [{es:"viajar",de:"reisen"},{es:"el aeropuerto",de:"der Flughafen"},{es:"el billete",de:"das Ticket"},{es:"el hotel",de:"das Hotel"},{es:"la calle",de:"die Straße"},{es:"el museo",de:"das Museum"},{es:"todo recto",de:"geradeaus"},{es:"el metro",de:"die U-Bahn"},{es:"cerca de",de:"in der Nähe von"},{es:"a la derecha",de:"rechts"}],
+  4: [{es:"el restaurante",de:"das Restaurant"},{es:"el desayuno",de:"das Frühstück"},{es:"el almuerzo",de:"das Mittagessen"},{es:"la cena",de:"das Abendessen"},{es:"el postre",de:"die Nachspeise"},{es:"rico",de:"lecker"},{es:"tener hambre",de:"Hunger haben"},{es:"el agua",de:"das Wasser"},{es:"la cuenta",de:"die Rechnung"},{es:"la carta",de:"die Speisekarte"}],
+  5: [{es:"ir de tiendas",de:"einkaufen gehen"},{es:"la camiseta",de:"das T-Shirt"},{es:"los pantalones",de:"die Hose"},{es:"el vestido",de:"das Kleid"},{es:"la chaqueta",de:"die Jacke"},{es:"¿cuánto cuesta?",de:"was kostet es?"},{es:"caro",de:"teuer"},{es:"barato",de:"billig"},{es:"pagar",de:"bezahlen"},{es:"la talla",de:"die Größe"}],
+  6: [{es:"la rutina diaria",de:"die Tagesroutine"},{es:"despertarse",de:"aufwachen"},{es:"levantarse",de:"aufstehen"},{es:"ducharse",de:"duschen"},{es:"vestirse",de:"sich anziehen"},{es:"acostarse",de:"schlafen gehen"},{es:"la asignatura",de:"das Unterrichtsfach"},{es:"el recreo",de:"die Pause"},{es:"siempre",de:"immer"},{es:"nunca",de:"nie"}]
 };
+
+let VOCAB = VOCAB_FALLBACK;
+let vocabLoaded = false;
+
+async function loadVocab() {
+  try {
+    const res = await fetch('./vocab.json');
+    if (!res.ok) throw new Error('fetch failed');
+    const data = await res.json();
+    // Convert from {units: {"1": {vocab: [...]}}} to {1: [...]}
+    const units = data.units || {};
+    const built = {};
+    for (const key of Object.keys(units)) {
+      built[parseInt(key)] = units[key].vocab.map(v => ({es:v.es, de:v.de}));
+    }
+    VOCAB = built;
+    vocabLoaded = true;
+    // Update unit subtitles with real counts
+    for (const key of Object.keys(units)) {
+      const el = document.getElementById('sub-u'+key);
+      if (el) el.textContent = units[key].vocab.length + ' Vokabeln · ' + units[key].topic;
+    }
+    const total = Object.values(built).reduce((s,a)=>s+a.length,0);
+    const subAll = document.getElementById('sub-all');
+    if (subAll) subAll.textContent = total + ' Vokabeln · Unidad 1–' + Object.keys(units).length;
+    console.log('vocab.json loaded: ' + total + ' entries');
+  } catch(e) {
+    console.warn('vocab.json not found – using fallback vocab. Error:', e.message);
+    vocabLoaded = false;
+  }
+}
 
 // ══ STATE ════════════════════════════════════════════════════════
 let state = {
@@ -1296,6 +1232,9 @@ selectMode('mc');
 selectDir('es');
 renderStats();
 checkInstallBanner();
+
+// Load vocabulary from external vocab.json (falls back to built-in if unavailable)
+loadVocab();
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').catch(() => {});

@@ -1,0 +1,3983 @@
+{
+  "_meta": {
+    "version": "2.0",
+    "course": "Caminos 1",
+    "last_updated": "2026-05-30",
+    "source": "Vocabulario S. 224–235",
+    "notes": "Vollständiges Vokabular aus allen Unterkapiteln 1A–6D. Format: {es, de, chapter} – chapter gibt das Unterkapitel an (z.B. '1A', '6B'). Zum Hinzufügen: neuen Eintrag im richtigen unit-Block einfügen.",
+    "total_entries": 787
+  },
+  "units": {
+    "1": {
+      "title": "Primeras palabras",
+      "topic": "Begrüßung, Vorstellung, erste Wörter",
+      "vocab": [
+        {
+          "es": "informal",
+          "de": "informell",
+          "chapter": "1A"
+        },
+        {
+          "es": "saludar",
+          "de": "begrüßen",
+          "chapter": "1A"
+        },
+        {
+          "es": "presentarse",
+          "de": "sich vorstellen",
+          "chapter": "1A"
+        },
+        {
+          "es": "primeras palabras",
+          "de": "erste Wörter / das Wort",
+          "chapter": "1A"
+        },
+        {
+          "es": "la unidad",
+          "de": "die Einheit / Lektion",
+          "chapter": "1A"
+        },
+        {
+          "es": "el mundo del español",
+          "de": "die Welt des Spanischen",
+          "chapter": "1A"
+        },
+        {
+          "es": "el español",
+          "de": "Spanisch (Sprache)",
+          "chapter": "1A"
+        },
+        {
+          "es": "el gazpacho",
+          "de": "andalusische Kaltsuppe",
+          "chapter": "1A"
+        },
+        {
+          "es": "la Alhambra",
+          "de": "arabischer Palast in Granada",
+          "chapter": "1A"
+        },
+        {
+          "es": "la fiesta",
+          "de": "die Party / das Fest",
+          "chapter": "1A"
+        },
+        {
+          "es": "las playas",
+          "de": "die Strände",
+          "chapter": "1A"
+        },
+        {
+          "es": "los emperadores",
+          "de": "die Tempel aus Mittelamerika u. Südamerika",
+          "chapter": "1A"
+        },
+        {
+          "es": "las ruinas",
+          "de": "die Ruinen",
+          "chapter": "1A"
+        },
+        {
+          "es": "el estadio",
+          "de": "das Stadion",
+          "chapter": "1A"
+        },
+        {
+          "es": "el tango",
+          "de": "der Tango (Musik- und Tanzform)",
+          "chapter": "1A"
+        },
+        {
+          "es": "la telenovela",
+          "de": "die Seifenoper",
+          "chapter": "1A"
+        },
+        {
+          "es": "las tapas",
+          "de": "kleine Speisen (span. Tradition)",
+          "chapter": "1A"
+        },
+        {
+          "es": "¡Buenos días!",
+          "de": "Guten Tag!",
+          "chapter": "1A"
+        },
+        {
+          "es": "soy (ser)",
+          "de": "ich bin (sein)",
+          "chapter": "1A"
+        },
+        {
+          "es": "¿y tú?",
+          "de": "und du?",
+          "chapter": "1A"
+        },
+        {
+          "es": "¿Cómo te llamas?",
+          "de": "Wie heißt du?",
+          "chapter": "1A"
+        },
+        {
+          "es": "¿Qué tal?",
+          "de": "Wie geht's?",
+          "chapter": "1A"
+        },
+        {
+          "es": "¡Buenos tardes!",
+          "de": "Guten Nachmittag!",
+          "chapter": "1A"
+        },
+        {
+          "es": "¡Buenas noches!",
+          "de": "Guten Abend! / Gute Nacht!",
+          "chapter": "1A"
+        },
+        {
+          "es": "¿Cómo estás?",
+          "de": "Wie geht es dir?",
+          "chapter": "1A"
+        },
+        {
+          "es": "(muy) bien",
+          "de": "(sehr) gut",
+          "chapter": "1A"
+        },
+        {
+          "es": "el diálogo",
+          "de": "der Dialog",
+          "chapter": "1A"
+        },
+        {
+          "es": "formal",
+          "de": "formell",
+          "chapter": "1A"
+        },
+        {
+          "es": "¿Quién es…? (def. ser)",
+          "de": "Wer ist…?",
+          "chapter": "1B"
+        },
+        {
+          "es": "el/la uno/a",
+          "de": "der/die Eine",
+          "chapter": "1B"
+        },
+        {
+          "es": "el modelo / la modelo",
+          "de": "das Modell / die/das Beispiel",
+          "chapter": "1B"
+        },
+        {
+          "es": "famoso/a",
+          "de": "berühmt",
+          "chapter": "1B"
+        },
+        {
+          "es": "moderno/a",
+          "de": "modern",
+          "chapter": "1B"
+        },
+        {
+          "es": "un/a tenista",
+          "de": "ein/e Tennisspieler/in",
+          "chapter": "1B"
+        },
+        {
+          "es": "un/a futbolista",
+          "de": "ein/e Fußballspieler/in",
+          "chapter": "1B"
+        },
+        {
+          "es": "un/a actor/actriz",
+          "de": "ein/e Schauspieler/in",
+          "chapter": "1B"
+        },
+        {
+          "es": "un/a músico/a",
+          "de": "ein/e Musiker/in",
+          "chapter": "1B"
+        },
+        {
+          "es": "cubano/a",
+          "de": "kubanisch",
+          "chapter": "1B"
+        },
+        {
+          "es": "un/a director/a de orquesta",
+          "de": "ein/e Dirigent/in",
+          "chapter": "1B"
+        },
+        {
+          "es": "masculino/a",
+          "de": "männlich",
+          "chapter": "1C"
+        },
+        {
+          "es": "femenino/a",
+          "de": "weiblich",
+          "chapter": "1C"
+        },
+        {
+          "es": "la excursión",
+          "de": "der Ausflug",
+          "chapter": "1C"
+        },
+        {
+          "es": "la persona",
+          "de": "die Person",
+          "chapter": "1C"
+        },
+        {
+          "es": "presentar a alguien",
+          "de": "eine Person vorstellen",
+          "chapter": "1C"
+        },
+        {
+          "es": "el/la compañero/a",
+          "de": "Kollege, Kollegin",
+          "chapter": "1C"
+        },
+        {
+          "es": "el perro",
+          "de": "der Hund",
+          "chapter": "1C"
+        },
+        {
+          "es": "el/la amigo/a",
+          "de": "der/die Freund/in",
+          "chapter": "1C"
+        },
+        {
+          "es": "de Chile",
+          "de": "aus Chile",
+          "chapter": "1C"
+        },
+        {
+          "es": "exacto",
+          "de": "genau",
+          "chapter": "1C"
+        },
+        {
+          "es": "se habla español (inf. hablar)",
+          "de": "man spricht Spanisch",
+          "chapter": "1C"
+        },
+        {
+          "es": "el Museo del Prado",
+          "de": "Prado-Museum (Madrid)",
+          "chapter": "1C"
+        },
+        {
+          "es": "la arquitectura",
+          "de": "die Architektur",
+          "chapter": "1C"
+        },
+        {
+          "es": "leer este texto (inf. leer)",
+          "de": "Lies diesen Text.",
+          "chapter": "1C"
+        },
+        {
+          "es": "el texto",
+          "de": "der Text",
+          "chapter": "1C"
+        },
+        {
+          "es": "o",
+          "de": "oder",
+          "chapter": "1C"
+        },
+        {
+          "es": "el castellano",
+          "de": "Kastilisch, Spanisch",
+          "chapter": "1C"
+        },
+        {
+          "es": "el idioma oficial",
+          "de": "die Amtssprache",
+          "chapter": "1C"
+        },
+        {
+          "es": "de",
+          "de": "von",
+          "chapter": "1C"
+        },
+        {
+          "es": "latinoamericano/a",
+          "de": "lateinamerikanisch",
+          "chapter": "1C"
+        },
+        {
+          "es": "más de 500 millones de personas",
+          "de": "mehr als 500 Millionen Menschen",
+          "chapter": "1C"
+        },
+        {
+          "es": "el continente",
+          "de": "der Kontinent",
+          "chapter": "1C"
+        },
+        {
+          "es": "la lengua",
+          "de": "die Sprache",
+          "chapter": "1C"
+        },
+        {
+          "es": "también",
+          "de": "auch",
+          "chapter": "1C"
+        },
+        {
+          "es": "aprendes (inf. aprender)",
+          "de": "du lernst",
+          "chapter": "1C"
+        },
+        {
+          "es": "bonito/a",
+          "de": "schön",
+          "chapter": "1C"
+        },
+        {
+          "es": "no sé",
+          "de": "ich weiß nicht",
+          "chapter": "1C"
+        },
+        {
+          "es": "no conoces (inf. conocer)",
+          "de": "du kennst nicht",
+          "chapter": "1C"
+        },
+        {
+          "es": "no con muchas personas",
+          "de": "nicht mit vielen Menschen",
+          "chapter": "1C"
+        },
+        {
+          "es": "descubrir",
+          "de": "entdecken",
+          "chapter": "1C"
+        },
+        {
+          "es": "la cultura",
+          "de": "die Kultur",
+          "chapter": "1C"
+        },
+        {
+          "es": "la despedida",
+          "de": "die Verabschiedung",
+          "chapter": "1D"
+        },
+        {
+          "es": "¡Hasta luego!",
+          "de": "Bis bald!",
+          "chapter": "1D"
+        },
+        {
+          "es": "¡Adiós! / ¡Chao!",
+          "de": "Auf Wiedersehen! Tschüss!",
+          "chapter": "1D"
+        },
+        {
+          "es": "¡Hasta mañana!",
+          "de": "Bis morgen!",
+          "chapter": "1D"
+        },
+        {
+          "es": "el lugar",
+          "de": "der Ort",
+          "chapter": "1D"
+        },
+        {
+          "es": "el café",
+          "de": "der Kaffee",
+          "chapter": "1D"
+        }
+      ]
+    },
+    "2": {
+      "title": "Mi mundo",
+      "topic": "Familie, Beruf, Wohnen, Stadt",
+      "vocab": [
+        {
+          "es": "el encuentro",
+          "de": "die Begegnung / das Treffen",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la compañero/a",
+          "de": "Lernpartner/in",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la profesor/a",
+          "de": "der/die Lehrer/in",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la médico/a",
+          "de": "der Arzt / die Ärztin",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la estudiante",
+          "de": "der/die Schüler/in",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la piloto",
+          "de": "der/die Pilot/in",
+          "chapter": "2A"
+        },
+        {
+          "es": "mi profesión (f)",
+          "de": "mein Beruf",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la mecánico/a",
+          "de": "der/die Mechaniker/in",
+          "chapter": "2A"
+        },
+        {
+          "es": "la arquitectura",
+          "de": "die Architektur",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la arquitecto/a",
+          "de": "der/die Architekt/in",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la teleoperador/a",
+          "de": "der/die Telefonist/in",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la recepcionista",
+          "de": "der/die Rezeptionist/in",
+          "chapter": "2A"
+        },
+        {
+          "es": "nos vemos por aquí",
+          "de": "wir sehen uns hier",
+          "chapter": "2A"
+        },
+        {
+          "es": "encontrado",
+          "de": "angetroffen",
+          "chapter": "2A"
+        },
+        {
+          "es": "yo soy…",
+          "de": "ich bin…",
+          "chapter": "2A"
+        },
+        {
+          "es": "mucho gusto",
+          "de": "sehr angenehm / freut mich",
+          "chapter": "2A"
+        },
+        {
+          "es": "nuevo/a",
+          "de": "neu",
+          "chapter": "2A"
+        },
+        {
+          "es": "el gimnasio",
+          "de": "die Turnhalle / das Fitnessstudio",
+          "chapter": "2A"
+        },
+        {
+          "es": "trabajo (inf. trabajar)",
+          "de": "ich arbeite / das Innovative",
+          "chapter": "2A"
+        },
+        {
+          "es": "bienvenido/a",
+          "de": "willkommen",
+          "chapter": "2A"
+        },
+        {
+          "es": "bueno",
+          "de": "gut",
+          "chapter": "2A"
+        },
+        {
+          "es": "igual que yo",
+          "de": "genauso wie ich",
+          "chapter": "2A"
+        },
+        {
+          "es": "tú eres (inf. ser)",
+          "de": "du bist",
+          "chapter": "2A"
+        },
+        {
+          "es": "usted",
+          "de": "Sie (Anrede)",
+          "chapter": "2A"
+        },
+        {
+          "es": "yo",
+          "de": "ich",
+          "chapter": "2A"
+        },
+        {
+          "es": "tú",
+          "de": "du",
+          "chapter": "2A"
+        },
+        {
+          "es": "él / ella / usted",
+          "de": "er / sie / Sie",
+          "chapter": "2A"
+        },
+        {
+          "es": "nosotros/as",
+          "de": "wir",
+          "chapter": "2A"
+        },
+        {
+          "es": "vosotros/as",
+          "de": "ihr",
+          "chapter": "2A"
+        },
+        {
+          "es": "ellos / ellas / ustedes",
+          "de": "sie (Pl.) / Sie (formell Pl.)",
+          "chapter": "2A"
+        },
+        {
+          "es": "el/la cliente/a",
+          "de": "der/die Kund/in",
+          "chapter": "2A"
+        },
+        {
+          "es": "soy de… (inf. ser)",
+          "de": "ich bin aus…",
+          "chapter": "2A"
+        },
+        {
+          "es": "¿Qué haces? (inf. hacer)",
+          "de": "Was machst du beruflich?",
+          "chapter": "2B"
+        },
+        {
+          "es": "el/la cantante",
+          "de": "der/die Sänger/in",
+          "chapter": "2B"
+        },
+        {
+          "es": "el/la cocinero/a",
+          "de": "der/die Koch / Köchin",
+          "chapter": "2B"
+        },
+        {
+          "es": "el/la taxista",
+          "de": "der/die Taxifahrer/in",
+          "chapter": "2B"
+        },
+        {
+          "es": "el padre",
+          "de": "der Vater",
+          "chapter": "2B"
+        },
+        {
+          "es": "la madre",
+          "de": "die Mutter",
+          "chapter": "2B"
+        },
+        {
+          "es": "el/la tío/a",
+          "de": "der Onkel / die Tante",
+          "chapter": "2B"
+        },
+        {
+          "es": "el/la vecino/a",
+          "de": "der/die Nachbar/in",
+          "chapter": "2B"
+        },
+        {
+          "es": "el/la hermano/a",
+          "de": "der Bruder / die Schwester",
+          "chapter": "2B"
+        },
+        {
+          "es": "el/la primo/a",
+          "de": "der/die Cousin/e",
+          "chapter": "2B"
+        },
+        {
+          "es": "el/la abuelo/a",
+          "de": "der Großvater / die Großmutter",
+          "chapter": "2B"
+        },
+        {
+          "es": "vivir",
+          "de": "wohnen / leben",
+          "chapter": "2C"
+        },
+        {
+          "es": "donde",
+          "de": "wo",
+          "chapter": "2C"
+        },
+        {
+          "es": "aquí",
+          "de": "hier",
+          "chapter": "2C"
+        },
+        {
+          "es": "aprender",
+          "de": "lernen",
+          "chapter": "2C"
+        },
+        {
+          "es": "tener",
+          "de": "haben",
+          "chapter": "2C"
+        },
+        {
+          "es": "la clase particular",
+          "de": "die Nachhilfe",
+          "chapter": "2C"
+        },
+        {
+          "es": "desde hace 3 años",
+          "de": "seit 3 Jahren",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la programador/a",
+          "de": "der/die Programmierer/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "la empresa",
+          "de": "das Unternehmen",
+          "chapter": "2C"
+        },
+        {
+          "es": "el hotel",
+          "de": "das Hotel",
+          "chapter": "2C"
+        },
+        {
+          "es": "el estudio",
+          "de": "die Schule",
+          "chapter": "2C"
+        },
+        {
+          "es": "el hospital",
+          "de": "das Krankenhaus",
+          "chapter": "2C"
+        },
+        {
+          "es": "trabajar",
+          "de": "arbeiten",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la secretario/a",
+          "de": "der/die Sekretär/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la dentista",
+          "de": "der/die Zahnarzt/ärztin",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la periodista",
+          "de": "der/die Journalist/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la ama/o de casa",
+          "de": "der/die Hausmann/frau",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la electricista",
+          "de": "der/die Elektriker/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la camarero/a",
+          "de": "der/die Kellner/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la fotógrafo/a",
+          "de": "der/die Fotograf/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la carpintero/a",
+          "de": "der/die Tischler/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la abogado/a",
+          "de": "der/die Anwalt/Anwältin",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la peluquero/a",
+          "de": "der/die Friseur/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la oidor/actriz",
+          "de": "der/die Schauspieler/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la empleado/a de banco",
+          "de": "der/die Bankangestellte",
+          "chapter": "2C"
+        },
+        {
+          "es": "el instituto",
+          "de": "die Schule",
+          "chapter": "2C"
+        },
+        {
+          "es": "el verano",
+          "de": "der Sommer",
+          "chapter": "2C"
+        },
+        {
+          "es": "quieren (inf. querer)",
+          "de": "sie wollen",
+          "chapter": "2C"
+        },
+        {
+          "es": "contento/a",
+          "de": "zufrieden",
+          "chapter": "2C"
+        },
+        {
+          "es": "agosto",
+          "de": "August",
+          "chapter": "2C"
+        },
+        {
+          "es": "julio",
+          "de": "Juli",
+          "chapter": "2C"
+        },
+        {
+          "es": "otro/a",
+          "de": "andere/r",
+          "chapter": "2C"
+        },
+        {
+          "es": "el supermercado",
+          "de": "der Supermarkt",
+          "chapter": "2C"
+        },
+        {
+          "es": "el/la cajero/a",
+          "de": "der/die Kassierer/in",
+          "chapter": "2C"
+        },
+        {
+          "es": "descansar",
+          "de": "sich erholen",
+          "chapter": "2C"
+        },
+        {
+          "es": "la capital",
+          "de": "die Hauptstadt",
+          "chapter": "2D"
+        },
+        {
+          "es": "el centro de la ciudad",
+          "de": "das Stadtzentrum",
+          "chapter": "2D"
+        },
+        {
+          "es": "tradicional",
+          "de": "traditionell",
+          "chapter": "2D"
+        },
+        {
+          "es": "el proyecto",
+          "de": "das Projekt",
+          "chapter": "2D"
+        }
+      ]
+    },
+    "3": {
+      "title": "De viaje",
+      "topic": "Reisen, Stadt, Orientierung, Transport",
+      "vocab": [
+        {
+          "es": "la estación",
+          "de": "der Bahnhof",
+          "chapter": "3A"
+        },
+        {
+          "es": "el aeropuerto",
+          "de": "der Flughafen",
+          "chapter": "3A"
+        },
+        {
+          "es": "el mercado",
+          "de": "der Markt",
+          "chapter": "3A"
+        },
+        {
+          "es": "la autopista",
+          "de": "die Autobahn",
+          "chapter": "3A"
+        },
+        {
+          "es": "el teatro",
+          "de": "das Theater",
+          "chapter": "3A"
+        },
+        {
+          "es": "la farmacia",
+          "de": "die Apotheke",
+          "chapter": "3A"
+        },
+        {
+          "es": "la catedral",
+          "de": "die Kathedrale",
+          "chapter": "3A"
+        },
+        {
+          "es": "el parque",
+          "de": "der Park",
+          "chapter": "3A"
+        },
+        {
+          "es": "Correos",
+          "de": "die Post",
+          "chapter": "3A"
+        },
+        {
+          "es": "la tienda",
+          "de": "das Geschäft",
+          "chapter": "3A"
+        },
+        {
+          "es": "la tradición",
+          "de": "die Tradition",
+          "chapter": "3A"
+        },
+        {
+          "es": "la contaminación",
+          "de": "die Umweltverschmutzung",
+          "chapter": "3A"
+        },
+        {
+          "es": "los saltos comerciales",
+          "de": "Einkaufszentren",
+          "chapter": "3A"
+        },
+        {
+          "es": "Hay de todo",
+          "de": "Es gibt alles (Mögliche)",
+          "chapter": "3A"
+        },
+        {
+          "es": "el plano",
+          "de": "der Plan",
+          "chapter": "3A"
+        },
+        {
+          "es": "Perdone. (inf. perdonar)",
+          "de": "Entschuldigung (Sie)",
+          "chapter": "3A"
+        },
+        {
+          "es": "¿Dónde está…?",
+          "de": "Wo befindet sich…?",
+          "chapter": "3A"
+        },
+        {
+          "es": "cerca (de)",
+          "de": "in der Nähe",
+          "chapter": "3A"
+        },
+        {
+          "es": "¿muy cerca?",
+          "de": "sehr nah?",
+          "chapter": "3A"
+        },
+        {
+          "es": "¿Dónde voy?",
+          "de": "Wohin gehe ich?",
+          "chapter": "3A"
+        },
+        {
+          "es": "el lado de",
+          "de": "neben / die Seite von",
+          "chapter": "3A"
+        },
+        {
+          "es": "de nada",
+          "de": "bitte / gern geschehen",
+          "chapter": "3A"
+        },
+        {
+          "es": "por aquí",
+          "de": "hier entlang",
+          "chapter": "3A"
+        },
+        {
+          "es": "Un momento.",
+          "de": "Einen Augenblick.",
+          "chapter": "3A"
+        },
+        {
+          "es": "saber (yo sé)",
+          "de": "wissen / kennen",
+          "chapter": "3A"
+        },
+        {
+          "es": "tener que (yo tengo)",
+          "de": "müssen / sich müssen",
+          "chapter": "3A"
+        },
+        {
+          "es": "por favor",
+          "de": "bitte",
+          "chapter": "3B"
+        },
+        {
+          "es": "local",
+          "de": "örtlich",
+          "chapter": "3B"
+        },
+        {
+          "es": "la ubicación",
+          "de": "die Lage",
+          "chapter": "3B"
+        },
+        {
+          "es": "la costa está a 14 kilómetros",
+          "de": "die Küste ist 14 Kilometer entfernt",
+          "chapter": "3B"
+        },
+        {
+          "es": "ideal",
+          "de": "ideal",
+          "chapter": "3B"
+        },
+        {
+          "es": "la bicicleta",
+          "de": "das Fahrrad",
+          "chapter": "3B"
+        },
+        {
+          "es": "bajo/a",
+          "de": "niedrig",
+          "chapter": "3B"
+        },
+        {
+          "es": "hacer deporte",
+          "de": "Sport machen",
+          "chapter": "3B"
+        },
+        {
+          "es": "disfrutar de la naturaleza",
+          "de": "die Natur genießen",
+          "chapter": "3B"
+        },
+        {
+          "es": "de aquí",
+          "de": "von hier",
+          "chapter": "3B"
+        },
+        {
+          "es": "amable",
+          "de": "freundlich",
+          "chapter": "3B"
+        },
+        {
+          "es": "en resumen",
+          "de": "alles in allem",
+          "chapter": "3B"
+        },
+        {
+          "es": "Besos y abrazos",
+          "de": "Liebe Grüße",
+          "chapter": "3B"
+        },
+        {
+          "es": "desde el sur",
+          "de": "aus dem Süden",
+          "chapter": "3B"
+        },
+        {
+          "es": "la montaña",
+          "de": "der Berg",
+          "chapter": "3B"
+        },
+        {
+          "es": "la serie",
+          "de": "die Fernsehserie",
+          "chapter": "3B"
+        },
+        {
+          "es": "me gusta… (inf. gustar)",
+          "de": "mir gefällt…",
+          "chapter": "3B"
+        },
+        {
+          "es": "¿Te gusta viajar?",
+          "de": "Reist du gerne?",
+          "chapter": "3B"
+        },
+        {
+          "es": "¿Por qué?",
+          "de": "Warum?",
+          "chapter": "3B"
+        },
+        {
+          "es": "¿Te gustan los museos?",
+          "de": "Magst du Museen?",
+          "chapter": "3B"
+        },
+        {
+          "es": "el pueblo",
+          "de": "das Dorf",
+          "chapter": "3B"
+        },
+        {
+          "es": "los deberes (pero casa)",
+          "de": "die Hausaufgaben",
+          "chapter": "3B"
+        },
+        {
+          "es": "las comidas y zonas",
+          "de": "die Mahlzeiten und Gebiete",
+          "chapter": "3B"
+        },
+        {
+          "es": "las vacaciones",
+          "de": "die Ferien",
+          "chapter": "3B"
+        },
+        {
+          "es": "la canción",
+          "de": "das Lied",
+          "chapter": "3B"
+        },
+        {
+          "es": "¿Qué te gusta? (pref. gustar)",
+          "de": "Was gefällt dir?",
+          "chapter": "3B"
+        },
+        {
+          "es": "el avión",
+          "de": "das Flugzeug",
+          "chapter": "3B"
+        },
+        {
+          "es": "la moto",
+          "de": "das Motorrad",
+          "chapter": "3B"
+        },
+        {
+          "es": "la noche",
+          "de": "die Nacht",
+          "chapter": "3B"
+        },
+        {
+          "es": "seguir (i)",
+          "de": "weitergehen / folgen",
+          "chapter": "3B"
+        },
+        {
+          "es": "hasta",
+          "de": "bis",
+          "chapter": "3B"
+        },
+        {
+          "es": "el cruce",
+          "de": "die Kreuzung",
+          "chapter": "3B"
+        },
+        {
+          "es": "girar a la derecho",
+          "de": "rechts abbiegen",
+          "chapter": "3B"
+        },
+        {
+          "es": "el Museo de Arte",
+          "de": "Kunstmuseum",
+          "chapter": "3B"
+        },
+        {
+          "es": "al frente",
+          "de": "geradeaus",
+          "chapter": "3B"
+        },
+        {
+          "es": "la estación de autobuses",
+          "de": "der Busbahnhof",
+          "chapter": "3B"
+        },
+        {
+          "es": "el autobús",
+          "de": "der Bus",
+          "chapter": "3B"
+        },
+        {
+          "es": "Se debe… tomar",
+          "de": "Sie müssen… nehmen",
+          "chapter": "3B"
+        },
+        {
+          "es": "la primera calle a la izquierda",
+          "de": "die erste Straße links",
+          "chapter": "3B"
+        },
+        {
+          "es": "primero/a",
+          "de": "erste/r",
+          "chapter": "3B"
+        },
+        {
+          "es": "a la derecha",
+          "de": "rechts",
+          "chapter": "3B"
+        },
+        {
+          "es": "a la izquierda",
+          "de": "links",
+          "chapter": "3B"
+        },
+        {
+          "es": "al final de la calle",
+          "de": "am Ende der Straße",
+          "chapter": "3B"
+        },
+        {
+          "es": "¿Vale? Gehen wir!",
+          "de": "Gehen wir!",
+          "chapter": "3B"
+        },
+        {
+          "es": "distante",
+          "de": "davor",
+          "chapter": "3C"
+        },
+        {
+          "es": "delante de",
+          "de": "vor",
+          "chapter": "3C"
+        },
+        {
+          "es": "detrás",
+          "de": "dahinter",
+          "chapter": "3C"
+        },
+        {
+          "es": "dentro de",
+          "de": "dazwischen",
+          "chapter": "3C"
+        },
+        {
+          "es": "entre",
+          "de": "zwischen",
+          "chapter": "3C"
+        },
+        {
+          "es": "en",
+          "de": "in",
+          "chapter": "3C"
+        },
+        {
+          "es": "el elefante",
+          "de": "der Elefant",
+          "chapter": "3C"
+        },
+        {
+          "es": "el oso",
+          "de": "der Bär",
+          "chapter": "3C"
+        },
+        {
+          "es": "el cocodrilo",
+          "de": "das Krokodil",
+          "chapter": "3C"
+        },
+        {
+          "es": "el gorila",
+          "de": "der Gorilla",
+          "chapter": "3C"
+        },
+        {
+          "es": "la jirafa",
+          "de": "die Giraffe",
+          "chapter": "3C"
+        },
+        {
+          "es": "la calle principal",
+          "de": "die Hauptstraße",
+          "chapter": "3C"
+        },
+        {
+          "es": "el aparcamiento",
+          "de": "der Parkplatz",
+          "chapter": "3C"
+        },
+        {
+          "es": "la panadería",
+          "de": "die Bäckerei",
+          "chapter": "3C"
+        },
+        {
+          "es": "el ayuntamiento",
+          "de": "das Rathaus",
+          "chapter": "3C"
+        },
+        {
+          "es": "la RENFE",
+          "de": "spanische Eisenbahn",
+          "chapter": "3C"
+        },
+        {
+          "es": "el puente",
+          "de": "die Brücke",
+          "chapter": "3C"
+        },
+        {
+          "es": "el puerto",
+          "de": "der Hafen",
+          "chapter": "3C"
+        },
+        {
+          "es": "demasiado estrecho",
+          "de": "zu schmal",
+          "chapter": "3C"
+        },
+        {
+          "es": "la puerta",
+          "de": "die Tür",
+          "chapter": "3C"
+        },
+        {
+          "es": "el/un guía turístico",
+          "de": "der Reiseführer/in",
+          "chapter": "3C"
+        },
+        {
+          "es": "el paseo",
+          "de": "der Spaziergang",
+          "chapter": "3C"
+        },
+        {
+          "es": "histórico/a",
+          "de": "geschichtlich, historisch",
+          "chapter": "3C"
+        },
+        {
+          "es": "la más grande",
+          "de": "die größte",
+          "chapter": "3C"
+        },
+        {
+          "es": "admirar",
+          "de": "bewundern, staunen",
+          "chapter": "3C"
+        },
+        {
+          "es": "el altar",
+          "de": "der Altar",
+          "chapter": "3C"
+        },
+        {
+          "es": "la moda",
+          "de": "die Mode",
+          "chapter": "3C"
+        },
+        {
+          "es": "la avenida",
+          "de": "die Allee",
+          "chapter": "3C"
+        },
+        {
+          "es": "el espectáculo",
+          "de": "das Show",
+          "chapter": "3C"
+        },
+        {
+          "es": "todo el año",
+          "de": "das ganze Jahr über",
+          "chapter": "3C"
+        },
+        {
+          "es": "la cifra",
+          "de": "die Ziffer",
+          "chapter": "3C"
+        },
+        {
+          "es": "correcto/a",
+          "de": "richtig, korrekt",
+          "chapter": "3C"
+        },
+        {
+          "es": "la superficie",
+          "de": "die Oberfläche",
+          "chapter": "3C"
+        },
+        {
+          "es": "los habitantes",
+          "de": "die Einwohner",
+          "chapter": "3C"
+        },
+        {
+          "es": "el/la turista",
+          "de": "der/die Tourist/in",
+          "chapter": "3C"
+        },
+        {
+          "es": "diferente",
+          "de": "unterschiedlich",
+          "chapter": "3C"
+        },
+        {
+          "es": "el coche eléctrico",
+          "de": "das Elektroauto",
+          "chapter": "3C"
+        },
+        {
+          "es": "¿Cuál es tu número de móvil?",
+          "de": "Welche Handy-Nummer hast du?",
+          "chapter": "3C"
+        },
+        {
+          "es": "¿Cuál?",
+          "de": "Welche/r/s?",
+          "chapter": "3C"
+        },
+        {
+          "es": "el correo electrónico",
+          "de": "die E-Mail",
+          "chapter": "3C"
+        },
+        {
+          "es": "el símbolo",
+          "de": "das Symbol (@ etc.)",
+          "chapter": "3C"
+        },
+        {
+          "es": "el punto",
+          "de": "der Punkt",
+          "chapter": "3C"
+        },
+        {
+          "es": "el guión",
+          "de": "der Bindestrich",
+          "chapter": "3C"
+        },
+        {
+          "es": "el teléfono celular (LA)",
+          "de": "das Mobiltelefon",
+          "chapter": "3C"
+        },
+        {
+          "es": "la clave de WiFi",
+          "de": "der WLAN-Passwort",
+          "chapter": "3C"
+        },
+        {
+          "es": "¿Tienes Instagram?",
+          "de": "Bist du auf Instagram?",
+          "chapter": "3C"
+        },
+        {
+          "es": "No, no tengo.",
+          "de": "Ich habe keins.",
+          "chapter": "3C"
+        },
+        {
+          "es": "la red social",
+          "de": "das soziale Netzwerk",
+          "chapter": "3C"
+        },
+        {
+          "es": "muchos/as",
+          "de": "viele",
+          "chapter": "3D"
+        },
+        {
+          "es": "claro que sí",
+          "de": "selbstverständlich",
+          "chapter": "3D"
+        },
+        {
+          "es": "¡Genial!",
+          "de": "Genial!",
+          "chapter": "3D"
+        },
+        {
+          "es": "¡Super!",
+          "de": "Super!",
+          "chapter": "3D"
+        },
+        {
+          "es": "más de veinte millones de habitantes",
+          "de": "mehr als 20 Millionen Einwohner",
+          "chapter": "3D"
+        },
+        {
+          "es": "el coche",
+          "de": "das Auto",
+          "chapter": "3D"
+        },
+        {
+          "es": "el tráfico",
+          "de": "der Verkehr",
+          "chapter": "3D"
+        },
+        {
+          "es": "enorme",
+          "de": "enorm, ungefähr",
+          "chapter": "3D"
+        },
+        {
+          "es": "la fábrica",
+          "de": "die Fabrik",
+          "chapter": "3D"
+        },
+        {
+          "es": "tanto/a",
+          "de": "so viel/e",
+          "chapter": "3D"
+        },
+        {
+          "es": "¿Hay gente que quiere vivir en México?",
+          "de": "Gibt es Leute, die in Mexico leben wollen?",
+          "chapter": "3D"
+        },
+        {
+          "es": "la gente",
+          "de": "die Leute",
+          "chapter": "3D"
+        },
+        {
+          "es": "fronterizo/a",
+          "de": "grenzständig",
+          "chapter": "3D"
+        },
+        {
+          "es": "la modernidad",
+          "de": "die Modernität",
+          "chapter": "3D"
+        },
+        {
+          "es": "varios/as",
+          "de": "mehrere",
+          "chapter": "3D"
+        },
+        {
+          "es": "los monumentos",
+          "de": "Sehenswürdigkeiten",
+          "chapter": "3D"
+        },
+        {
+          "es": "las actividades culturales",
+          "de": "kulturelle Veranstaltungen",
+          "chapter": "3D"
+        },
+        {
+          "es": "el turismo",
+          "de": "der Tourismus",
+          "chapter": "3D"
+        },
+        {
+          "es": "la vida cultural",
+          "de": "das Kulturleben",
+          "chapter": "3D"
+        },
+        {
+          "es": "¿ya no está?",
+          "de": "ist es nicht mehr da?",
+          "chapter": "3D"
+        },
+        {
+          "es": "visto",
+          "de": "gesehen",
+          "chapter": "3D"
+        },
+        {
+          "es": "¿Te dice algo?",
+          "de": "Sagt dir das etwas?",
+          "chapter": "3D"
+        },
+        {
+          "es": "Si tú dices…",
+          "de": "Wenn du meinst…",
+          "chapter": "3D"
+        },
+        {
+          "es": "Ausreden",
+          "de": "Ausreden",
+          "chapter": "3D"
+        },
+        {
+          "es": "tengo que contarte una cosa",
+          "de": "ich muss dir was erzählen",
+          "chapter": "3D"
+        },
+        {
+          "es": "¿(Qué) cómo?",
+          "de": "Was dann?",
+          "chapter": "3D"
+        },
+        {
+          "es": "¿Te acuerdas de…?",
+          "de": "Erinnerst du dich an…?",
+          "chapter": "3D"
+        },
+        {
+          "es": "Mi destino",
+          "de": "Mein Standort",
+          "chapter": "3D"
+        },
+        {
+          "es": "Ihr Zeitplan",
+          "de": "Ihr Zeitplan",
+          "chapter": "3D"
+        },
+        {
+          "es": "ir en avión/en tren/en bicicleta",
+          "de": "mit dem Auto/Zug/Fahrrad fahren",
+          "chapter": "3D"
+        },
+        {
+          "es": "ir a pie",
+          "de": "zu Fuß gehen",
+          "chapter": "3D"
+        },
+        {
+          "es": "el tranvía",
+          "de": "die Straßenbahn",
+          "chapter": "3D"
+        },
+        {
+          "es": "una cadena",
+          "de": "eine Kette, hier: Kettenrestaurant",
+          "chapter": "3D"
+        },
+        {
+          "es": "el billete",
+          "de": "die Fahrkarte",
+          "chapter": "3D"
+        },
+        {
+          "es": "la zona",
+          "de": "die Zone",
+          "chapter": "3D"
+        },
+        {
+          "es": "dauer (i)",
+          "de": "es dauert",
+          "chapter": "3D"
+        },
+        {
+          "es": "se puede",
+          "de": "man kann",
+          "chapter": "3D"
+        },
+        {
+          "es": "hacer transbordo",
+          "de": "umsteigen",
+          "chapter": "3D"
+        },
+        {
+          "es": "el medio de transporte",
+          "de": "das Verkehrsmittel",
+          "chapter": "3D"
+        },
+        {
+          "es": "integrado",
+          "de": "hier: vernetzt",
+          "chapter": "3D"
+        },
+        {
+          "es": "el área metropolitana",
+          "de": "das Stadtgebiet",
+          "chapter": "3D"
+        },
+        {
+          "es": "la expresión así",
+          "de": "Ausdrucksweise",
+          "chapter": "3D"
+        },
+        {
+          "es": "la diferencia",
+          "de": "der Unterschied",
+          "chapter": "3D"
+        },
+        {
+          "es": "ser puntual",
+          "de": "pünktlich sein",
+          "chapter": "3D"
+        },
+        {
+          "es": "coger (i)",
+          "de": "nehmen (Verkehrsmittel)",
+          "chapter": "3D"
+        },
+        {
+          "es": "tarda una hora",
+          "de": "braucht eine Stunde",
+          "chapter": "3D"
+        }
+      ]
+    },
+    "4": {
+      "title": "¡Buen provecho!",
+      "topic": "Essen, Einkaufen, Restaurant, Uhrzeit",
+      "vocab": [
+        {
+          "es": "¿Qué necesitamos?",
+          "de": "Was brauchen wir noch?",
+          "chapter": "4A"
+        },
+        {
+          "es": "hacer la compra",
+          "de": "einkaufen",
+          "chapter": "4A"
+        },
+        {
+          "es": "la nevera",
+          "de": "der Kühlschrank",
+          "chapter": "4A"
+        },
+        {
+          "es": "la sandía",
+          "de": "die Wassermelone",
+          "chapter": "4A"
+        },
+        {
+          "es": "la naranja",
+          "de": "die Orange",
+          "chapter": "4A"
+        },
+        {
+          "es": "la lechuga",
+          "de": "der Salat",
+          "chapter": "4A"
+        },
+        {
+          "es": "la zanahoria",
+          "de": "die Karotte",
+          "chapter": "4A"
+        },
+        {
+          "es": "la oferta",
+          "de": "das Sonderangebot",
+          "chapter": "4A"
+        },
+        {
+          "es": "el yogur",
+          "de": "der Joghurt",
+          "chapter": "4A"
+        },
+        {
+          "es": "la fiesta sorpresa",
+          "de": "die Überraschungsparty",
+          "chapter": "4A"
+        },
+        {
+          "es": "quiero (inf. querer)",
+          "de": "ich möchte / ich will",
+          "chapter": "4A"
+        },
+        {
+          "es": "pero (yo no)",
+          "de": "aber (ich nicht)",
+          "chapter": "4A"
+        },
+        {
+          "es": "contar con ellos",
+          "de": "auf sie zählen",
+          "chapter": "4A"
+        },
+        {
+          "es": "las patatas fritas",
+          "de": "die Pommes Frites",
+          "chapter": "4A"
+        },
+        {
+          "es": "los cacahuetes",
+          "de": "die Erdnüsse",
+          "chapter": "4A"
+        },
+        {
+          "es": "el salami",
+          "de": "die Salami",
+          "chapter": "4A"
+        },
+        {
+          "es": "el chorizo",
+          "de": "Chorizo",
+          "chapter": "4A"
+        },
+        {
+          "es": "los aperitivos",
+          "de": "die Vorspeise",
+          "chapter": "4A"
+        },
+        {
+          "es": "hacer (yo) una pizza",
+          "de": "eine Pizza machen",
+          "chapter": "4A"
+        },
+        {
+          "es": "la rebolla",
+          "de": "die Zwiebel",
+          "chapter": "4A"
+        },
+        {
+          "es": "la tarjeta de patatas",
+          "de": "die Tortilla de Patatas",
+          "chapter": "4A"
+        },
+        {
+          "es": "el queso",
+          "de": "der Käse",
+          "chapter": "4A"
+        },
+        {
+          "es": "la mayonesa",
+          "de": "die Mayonnaise",
+          "chapter": "4A"
+        },
+        {
+          "es": "el pan de molde",
+          "de": "das Toastbrot",
+          "chapter": "4A"
+        },
+        {
+          "es": "la berenjenas",
+          "de": "die Aubergine",
+          "chapter": "4A"
+        },
+        {
+          "es": "la miel",
+          "de": "der Honig",
+          "chapter": "4A"
+        },
+        {
+          "es": "el ingrediente",
+          "de": "die Zutat",
+          "chapter": "4A"
+        },
+        {
+          "es": "el tomate",
+          "de": "die Tomate",
+          "chapter": "4A"
+        },
+        {
+          "es": "el pepino",
+          "de": "die Gurke",
+          "chapter": "4A"
+        },
+        {
+          "es": "el aceite de oliva",
+          "de": "das Olivenöl",
+          "chapter": "4A"
+        },
+        {
+          "es": "el vinagre",
+          "de": "der Essig",
+          "chapter": "4A"
+        },
+        {
+          "es": "el melón",
+          "de": "die Melone",
+          "chapter": "4A"
+        },
+        {
+          "es": "el plátano (LA: la banana)",
+          "de": "die Banane",
+          "chapter": "4A"
+        },
+        {
+          "es": "la mermelada",
+          "de": "die Marmelade",
+          "chapter": "4A"
+        },
+        {
+          "es": "taro/a",
+          "de": "teuer",
+          "chapter": "4A"
+        },
+        {
+          "es": "pagar",
+          "de": "bezahlen",
+          "chapter": "4A"
+        },
+        {
+          "es": "costar (ue)",
+          "de": "kosten",
+          "chapter": "4A"
+        },
+        {
+          "es": "una docena",
+          "de": "ein Dutzend",
+          "chapter": "4A"
+        },
+        {
+          "es": "el huevo",
+          "de": "das Ei",
+          "chapter": "4A"
+        },
+        {
+          "es": "la botella",
+          "de": "die Flasche",
+          "chapter": "4A"
+        },
+        {
+          "es": "el agua",
+          "de": "das Wasser",
+          "chapter": "4A"
+        },
+        {
+          "es": "un colón",
+          "de": "eine Kiste",
+          "chapter": "4A"
+        },
+        {
+          "es": "la fruta",
+          "de": "das Obst",
+          "chapter": "4A"
+        },
+        {
+          "es": "el paquete",
+          "de": "das Paket",
+          "chapter": "4A"
+        },
+        {
+          "es": "la mantequilla",
+          "de": "die Butter",
+          "chapter": "4A"
+        },
+        {
+          "es": "una lata",
+          "de": "eine Dose",
+          "chapter": "4A"
+        },
+        {
+          "es": "el atún",
+          "de": "der Thunfisch",
+          "chapter": "4A"
+        },
+        {
+          "es": "un kilo de queso",
+          "de": "ein halbes Kilo Käse",
+          "chapter": "4A"
+        },
+        {
+          "es": "medio kilo",
+          "de": "ein halbes Kilo",
+          "chapter": "4A"
+        },
+        {
+          "es": "la pera",
+          "de": "die Birne",
+          "chapter": "4A"
+        },
+        {
+          "es": "un litro de leche",
+          "de": "ein Liter Milch",
+          "chapter": "4A"
+        },
+        {
+          "es": "los cereales",
+          "de": "die Müsli",
+          "chapter": "4A"
+        },
+        {
+          "es": "la fresa",
+          "de": "die Erdbeere",
+          "chapter": "4A"
+        },
+        {
+          "es": "la manzana",
+          "de": "der Apfel",
+          "chapter": "4A"
+        },
+        {
+          "es": "la piña (LA: o el ananás)",
+          "de": "die Ananas",
+          "chapter": "4A"
+        },
+        {
+          "es": "la fresa (LA: la frutilla)",
+          "de": "die Erdbeere (LA: la frutilla)",
+          "chapter": "4A"
+        },
+        {
+          "es": "el melocotón (LA: el durazno)",
+          "de": "der Pfirsich",
+          "chapter": "4A"
+        },
+        {
+          "es": "la cereza",
+          "de": "die Kirsche",
+          "chapter": "4A"
+        },
+        {
+          "es": "¿Qué tal el pescado?",
+          "de": "Wie schmeckt der Fisch?",
+          "chapter": "4B"
+        },
+        {
+          "es": "el menú",
+          "de": "die Speisekarte",
+          "chapter": "4B"
+        },
+        {
+          "es": "el desayuno",
+          "de": "das Frühstück",
+          "chapter": "4B"
+        },
+        {
+          "es": "la tortilla",
+          "de": "das Omelett",
+          "chapter": "4B"
+        },
+        {
+          "es": "huevos revueltos",
+          "de": "Rührei",
+          "chapter": "4B"
+        },
+        {
+          "es": "huevo duro",
+          "de": "hartes Ei",
+          "chapter": "4B"
+        },
+        {
+          "es": "huevo pasado por agua",
+          "de": "weiches Ei",
+          "chapter": "4B"
+        },
+        {
+          "es": "huevo frito",
+          "de": "Spiegelei",
+          "chapter": "4B"
+        },
+        {
+          "es": "la entrada",
+          "de": "die Vorspeise",
+          "chapter": "4B"
+        },
+        {
+          "es": "el gazpacho (Esp.)",
+          "de": "Kalte Gemüsesuppe",
+          "chapter": "4B"
+        },
+        {
+          "es": "la ensalada mixta",
+          "de": "gemischter Salat",
+          "chapter": "4B"
+        },
+        {
+          "es": "los patatas bravas",
+          "de": "scharfe Patatas Bravas",
+          "chapter": "4B"
+        },
+        {
+          "es": "pimientos de Padrón",
+          "de": "typische spanische Paprika",
+          "chapter": "4B"
+        },
+        {
+          "es": "el filete",
+          "de": "das Steak",
+          "chapter": "4B"
+        },
+        {
+          "es": "la guarnición",
+          "de": "die Beilage",
+          "chapter": "4B"
+        },
+        {
+          "es": "el bistec",
+          "de": "das Beefsteak",
+          "chapter": "4B"
+        },
+        {
+          "es": "el escalope",
+          "de": "das Schnitzel",
+          "chapter": "4B"
+        },
+        {
+          "es": "el pollo",
+          "de": "das Huhn",
+          "chapter": "4B"
+        },
+        {
+          "es": "el ajillo",
+          "de": "die Knoblauchsoße",
+          "chapter": "4B"
+        },
+        {
+          "es": "la paella",
+          "de": "die Paella",
+          "chapter": "4B"
+        },
+        {
+          "es": "la porrita",
+          "de": "die Porrón",
+          "chapter": "4B"
+        },
+        {
+          "es": "el postre",
+          "de": "die Nachspeise",
+          "chapter": "4B"
+        },
+        {
+          "es": "el flan",
+          "de": "der Karamelpudding",
+          "chapter": "4B"
+        },
+        {
+          "es": "el fri",
+          "de": "das Eis",
+          "chapter": "4B"
+        },
+        {
+          "es": "el helado (d/g w.MilkMarke(Arg.))",
+          "de": "das Eis",
+          "chapter": "4B"
+        },
+        {
+          "es": "frutas del tiempo",
+          "de": "Früchte der Saison",
+          "chapter": "4B"
+        },
+        {
+          "es": "la crema catalana",
+          "de": "Katalanische Creme",
+          "chapter": "4B"
+        },
+        {
+          "es": "el acompañamiento",
+          "de": "die Beilage",
+          "chapter": "4B"
+        },
+        {
+          "es": "el arroz",
+          "de": "der Reis",
+          "chapter": "4B"
+        },
+        {
+          "es": "el menú del día",
+          "de": "das Tagesmenü",
+          "chapter": "4B"
+        },
+        {
+          "es": "incluido/a",
+          "de": "inkludiert",
+          "chapter": "4B"
+        },
+        {
+          "es": "el bebido",
+          "de": "das Getränk",
+          "chapter": "4B"
+        },
+        {
+          "es": "con gas (m)",
+          "de": "mit Kohlensäure",
+          "chapter": "4B"
+        },
+        {
+          "es": "sin gas",
+          "de": "ohne Kohlensäure / still",
+          "chapter": "4B"
+        },
+        {
+          "es": "el tinto de naranja",
+          "de": "der Orangensaft",
+          "chapter": "4B"
+        },
+        {
+          "es": "el tinte de verano",
+          "de": "Wein mit Rotwein und Limonade",
+          "chapter": "4B"
+        },
+        {
+          "es": "la sangría",
+          "de": "die Sangría",
+          "chapter": "4B"
+        },
+        {
+          "es": "la cerveza",
+          "de": "das Bier",
+          "chapter": "4B"
+        },
+        {
+          "es": "la merienda",
+          "de": "der Nachmittags-Imbiss",
+          "chapter": "4B"
+        },
+        {
+          "es": "poner (yo pongo)",
+          "de": "Das ist alles heute",
+          "chapter": "4B"
+        },
+        {
+          "es": "es todo por hoy",
+          "de": "Das ist alles heute",
+          "chapter": "4B"
+        },
+        {
+          "es": "quería (inf. querer)",
+          "de": "ich hätte gerne",
+          "chapter": "4B"
+        },
+        {
+          "es": "¿Cuánto cuenta / vale?",
+          "de": "Wie viel macht das?",
+          "chapter": "4B"
+        },
+        {
+          "es": "de acuerdo",
+          "de": "einverstanden",
+          "chapter": "4B"
+        },
+        {
+          "es": "el limón",
+          "de": "die Zitrone",
+          "chapter": "4B"
+        },
+        {
+          "es": "el azúcar",
+          "de": "der Zucker",
+          "chapter": "4B"
+        },
+        {
+          "es": "el pedido",
+          "de": "die Bestellung",
+          "chapter": "4B"
+        },
+        {
+          "es": "el bocadillo",
+          "de": "das Sandwich",
+          "chapter": "4B"
+        },
+        {
+          "es": "la cuenta",
+          "de": "die Rechnung",
+          "chapter": "4B"
+        },
+        {
+          "es": "la tarta",
+          "de": "die Torte",
+          "chapter": "4B"
+        },
+        {
+          "es": "la carta",
+          "de": "die Speisekarte",
+          "chapter": "4B"
+        },
+        {
+          "es": "el/la consumero/a",
+          "de": "der/die Kellner/in. Gast, Gericht",
+          "chapter": "4C"
+        },
+        {
+          "es": "el/la clienta",
+          "de": "der/die Gast",
+          "chapter": "4C"
+        },
+        {
+          "es": "lo de segundo",
+          "de": "das Zweite",
+          "chapter": "4C"
+        },
+        {
+          "es": "para beber",
+          "de": "zum Trinken",
+          "chapter": "4C"
+        },
+        {
+          "es": "¿Les gusta esta mesa?",
+          "de": "Gefällt Ihnen dieser Tisch?",
+          "chapter": "4C"
+        },
+        {
+          "es": "la mesa",
+          "de": "der Tisch",
+          "chapter": "4C"
+        },
+        {
+          "es": "para mí",
+          "de": "für mich",
+          "chapter": "4C"
+        },
+        {
+          "es": "de primero",
+          "de": "als Vorspeise",
+          "chapter": "4C"
+        },
+        {
+          "es": "pienso (yo) (inf. pensar)",
+          "de": "ich denke (an)",
+          "chapter": "4C"
+        },
+        {
+          "es": "la copa",
+          "de": "das Glas (mit Stiel)",
+          "chapter": "4C"
+        },
+        {
+          "es": "el vino tinto",
+          "de": "der Rotwein",
+          "chapter": "4C"
+        },
+        {
+          "es": "pedir (i)",
+          "de": "bestellen, bitten",
+          "chapter": "4C"
+        },
+        {
+          "es": "el tenedor",
+          "de": "die Gabel",
+          "chapter": "4C"
+        },
+        {
+          "es": "la cuchara",
+          "de": "der Löffel",
+          "chapter": "4C"
+        },
+        {
+          "es": "el cucharillo",
+          "de": "das Teelöffelchen",
+          "chapter": "4C"
+        },
+        {
+          "es": "el plato",
+          "de": "der Teller, das Gericht",
+          "chapter": "4C"
+        },
+        {
+          "es": "el cuchillo",
+          "de": "das Messer",
+          "chapter": "4C"
+        },
+        {
+          "es": "la servilleta",
+          "de": "die Serviette",
+          "chapter": "4C"
+        },
+        {
+          "es": "el mantel",
+          "de": "die Tischdecke",
+          "chapter": "4C"
+        },
+        {
+          "es": "el vaso",
+          "de": "das Trinkglas (Wasserglas)",
+          "chapter": "4C"
+        },
+        {
+          "es": "la sal",
+          "de": "das Salz",
+          "chapter": "4C"
+        },
+        {
+          "es": "la pimienta",
+          "de": "der Pfeffer",
+          "chapter": "4C"
+        },
+        {
+          "es": "los palillos",
+          "de": "die Essstäbchen",
+          "chapter": "4C"
+        },
+        {
+          "es": "nada de mí…",
+          "de": "nichts für mich…",
+          "chapter": "4C"
+        },
+        {
+          "es": "saber (ue)",
+          "de": "schmecken, wissen",
+          "chapter": "4C"
+        },
+        {
+          "es": "tomar (no, algo)",
+          "de": "nehmen, Aber: bestellen",
+          "chapter": "4C"
+        },
+        {
+          "es": "tener hambre",
+          "de": "Hunger haben",
+          "chapter": "4C"
+        },
+        {
+          "es": "tener sed",
+          "de": "Durst haben",
+          "chapter": "4C"
+        },
+        {
+          "es": "¡Buen provecho!",
+          "de": "Guten Appetit!",
+          "chapter": "4C"
+        },
+        {
+          "es": "el beso",
+          "de": "der Kuss",
+          "chapter": "4C"
+        },
+        {
+          "es": "el abrazo",
+          "de": "die Umarmung (Briefschluss)",
+          "chapter": "4C"
+        },
+        {
+          "es": "comer",
+          "de": "essen",
+          "chapter": "4C"
+        },
+        {
+          "es": "la comida",
+          "de": "die Mahlzeit, das Essen",
+          "chapter": "4C"
+        },
+        {
+          "es": "el comentario",
+          "de": "hier: Speise, Gericht",
+          "chapter": "4C"
+        },
+        {
+          "es": "el adjetivo",
+          "de": "das Adjektiv",
+          "chapter": "4C"
+        },
+        {
+          "es": "salado/a",
+          "de": "salzig, verzalzen",
+          "chapter": "4C"
+        },
+        {
+          "es": "picante",
+          "de": "scharf",
+          "chapter": "4C"
+        },
+        {
+          "es": "dulce",
+          "de": "süß",
+          "chapter": "4C"
+        },
+        {
+          "es": "ácido/a",
+          "de": "sauer",
+          "chapter": "4C"
+        },
+        {
+          "es": "soso/a",
+          "de": "fad",
+          "chapter": "4C"
+        },
+        {
+          "es": "rico/a",
+          "de": "lecker",
+          "chapter": "4C"
+        },
+        {
+          "es": "¿Qué tal tu comida?",
+          "de": "Wie ist dein Essen?",
+          "chapter": "4C"
+        },
+        {
+          "es": "a punto",
+          "de": "genau richtig",
+          "chapter": "4C"
+        },
+        {
+          "es": "poco hecho/a",
+          "de": "blutig",
+          "chapter": "4C"
+        },
+        {
+          "es": "bien cocido/a",
+          "de": "gut durchgebraten",
+          "chapter": "4C"
+        },
+        {
+          "es": "demasiado/a",
+          "de": "zu viel",
+          "chapter": "4C"
+        },
+        {
+          "es": "a la plancha",
+          "de": "auf dem Grill / gebraten",
+          "chapter": "4C"
+        },
+        {
+          "es": "jugoso/a",
+          "de": "saftig",
+          "chapter": "4C"
+        },
+        {
+          "es": "zort",
+          "de": "zart",
+          "chapter": "4C"
+        },
+        {
+          "es": "seco/a",
+          "de": "trocken",
+          "chapter": "4C"
+        },
+        {
+          "es": "duro/a",
+          "de": "hart",
+          "chapter": "4C"
+        },
+        {
+          "es": "tierno/a",
+          "de": "zart, weich",
+          "chapter": "4C"
+        },
+        {
+          "es": "blando/a",
+          "de": "weich, lauwarm",
+          "chapter": "4C"
+        },
+        {
+          "es": "templado/a",
+          "de": "lauwarm",
+          "chapter": "4C"
+        },
+        {
+          "es": "¿A qué hora?",
+          "de": "Um wie viel Uhr?",
+          "chapter": "4C"
+        },
+        {
+          "es": "es la una",
+          "de": "es ist eins",
+          "chapter": "4C"
+        },
+        {
+          "es": "son las diez",
+          "de": "hier: leider, jeden",
+          "chapter": "4C"
+        },
+        {
+          "es": "¿Qué hora es?",
+          "de": "Wie spät ist es?",
+          "chapter": "4C"
+        },
+        {
+          "es": "las doce y cuarto",
+          "de": "Viertel nach zwölf",
+          "chapter": "4C"
+        },
+        {
+          "es": "las once menos cuarto",
+          "de": "Viertel vor elf (kleiner Viertel)",
+          "chapter": "4C"
+        },
+        {
+          "es": "¿Tienes hora?",
+          "de": "Weißt du, wie spät es ist?",
+          "chapter": "4C"
+        },
+        {
+          "es": "¿Me puedes decir la hora?",
+          "de": "Kannst du mir bitte die Uhr sagen?",
+          "chapter": "4C"
+        },
+        {
+          "es": "a menudo",
+          "de": "oft",
+          "chapter": "4D"
+        },
+        {
+          "es": "el trago",
+          "de": "das Longdrink",
+          "chapter": "4D"
+        },
+        {
+          "es": "limpiarse la boca",
+          "de": "putzen Mund",
+          "chapter": "4D"
+        },
+        {
+          "es": "la ventaja",
+          "de": "der Vorteil",
+          "chapter": "4D"
+        },
+        {
+          "es": "la desventaja",
+          "de": "der Nachteil",
+          "chapter": "4D"
+        },
+        {
+          "es": "la entrada de blog",
+          "de": "der Blogeintrag",
+          "chapter": "4D"
+        },
+        {
+          "es": "pagar con tarjeta",
+          "de": "mit Karte zahlen",
+          "chapter": "4D"
+        },
+        {
+          "es": "con transferencia",
+          "de": "mit Überweisung",
+          "chapter": "4D"
+        },
+        {
+          "es": "el reportero/a",
+          "de": "der/die Lieferant/in",
+          "chapter": "4D"
+        },
+        {
+          "es": "cobrar",
+          "de": "kassieren",
+          "chapter": "4D"
+        },
+        {
+          "es": "opinar",
+          "de": "seine Meinung sagen",
+          "chapter": "4D"
+        },
+        {
+          "es": "desayunar (yo)",
+          "de": "acht Uhr morgens frühstücken",
+          "chapter": "4D"
+        },
+        {
+          "es": "las ocho de la mañana",
+          "de": "acht Uhr morgens",
+          "chapter": "4D"
+        },
+        {
+          "es": "el mediodía",
+          "de": "der Mittag",
+          "chapter": "4D"
+        },
+        {
+          "es": "almorzar (ue)",
+          "de": "zu Mittag essen",
+          "chapter": "4D"
+        },
+        {
+          "es": "a las dos de la tarde",
+          "de": "um zwei Uhr nachmittags",
+          "chapter": "4D"
+        },
+        {
+          "es": "cenar",
+          "de": "zu Abend essen",
+          "chapter": "4D"
+        },
+        {
+          "es": "sobre las diez",
+          "de": "gegen zehn Uhr",
+          "chapter": "4D"
+        },
+        {
+          "es": "antes",
+          "de": "vorher",
+          "chapter": "4D"
+        },
+        {
+          "es": "ir de bares",
+          "de": "etwas trinken gehen",
+          "chapter": "4D"
+        },
+        {
+          "es": "el aperitivo",
+          "de": "der Aperitif",
+          "chapter": "4D"
+        },
+        {
+          "es": "la porción",
+          "de": "die Portion",
+          "chapter": "4D"
+        },
+        {
+          "es": "el champiñón",
+          "de": "der Champignon",
+          "chapter": "4D"
+        },
+        {
+          "es": "siempre",
+          "de": "immer",
+          "chapter": "4D"
+        },
+        {
+          "es": "por la tarde",
+          "de": "nachmittags",
+          "chapter": "4D"
+        },
+        {
+          "es": "hallt es",
+          "de": "halbelf",
+          "chapter": "4D"
+        },
+        {
+          "es": "la cena",
+          "de": "das Abendessen",
+          "chapter": "4D"
+        },
+        {
+          "es": "llegar (i)",
+          "de": "ankommen",
+          "chapter": "4D"
+        },
+        {
+          "es": "los deberes",
+          "de": "die Hausaufgaben machen",
+          "chapter": "4D"
+        },
+        {
+          "es": "la rutina",
+          "de": "die Routine",
+          "chapter": "4D"
+        },
+        {
+          "es": "el chico/a",
+          "de": "der Junge / das Mädchen",
+          "chapter": "4D"
+        },
+        {
+          "es": "joven",
+          "de": "jung",
+          "chapter": "4D"
+        },
+        {
+          "es": "casi siempre",
+          "de": "fast immer",
+          "chapter": "4D"
+        },
+        {
+          "es": "soler (ue)",
+          "de": "gewohnt sein, etw. zu tun",
+          "chapter": "4D"
+        },
+        {
+          "es": "lo que hago",
+          "de": "was ich tue",
+          "chapter": "4D"
+        }
+      ]
+    },
+    "5": {
+      "title": "De compras",
+      "topic": "Einkaufen, Kleidung, Farben, Materialien, Öffnungszeiten",
+      "vocab": [
+        {
+          "es": "ir de tiendas",
+          "de": "einen Einkaufsbummel machen",
+          "chapter": "5A"
+        },
+        {
+          "es": "encima",
+          "de": "obendrauf",
+          "chapter": "5A"
+        },
+        {
+          "es": "escuro/a",
+          "de": "dunkel",
+          "chapter": "5A"
+        },
+        {
+          "es": "la manga",
+          "de": "der Ärmel",
+          "chapter": "5A"
+        },
+        {
+          "es": "el colgante",
+          "de": "die Kette",
+          "chapter": "5A"
+        },
+        {
+          "es": "el collar",
+          "de": "die Halskette",
+          "chapter": "5A"
+        },
+        {
+          "es": "el material",
+          "de": "das Material",
+          "chapter": "5A"
+        },
+        {
+          "es": "extender (i)",
+          "de": "ausdehnen",
+          "chapter": "5A"
+        },
+        {
+          "es": "la talla",
+          "de": "die Größe (Kleidung)",
+          "chapter": "5A"
+        },
+        {
+          "es": "cerrar (n)",
+          "de": "schließen",
+          "chapter": "5A"
+        },
+        {
+          "es": "los grandes almacenes",
+          "de": "das Kaufhaus",
+          "chapter": "5A"
+        },
+        {
+          "es": "el estanco",
+          "de": "die Tabaklätrik",
+          "chapter": "5A"
+        },
+        {
+          "es": "el lunes",
+          "de": "Montag",
+          "chapter": "5A"
+        },
+        {
+          "es": "el martes",
+          "de": "Dienstag",
+          "chapter": "5A"
+        },
+        {
+          "es": "el miércoles",
+          "de": "Mittwoch",
+          "chapter": "5A"
+        },
+        {
+          "es": "el jueves",
+          "de": "Donnerstag",
+          "chapter": "5A"
+        },
+        {
+          "es": "el viernes",
+          "de": "Freitag",
+          "chapter": "5A"
+        },
+        {
+          "es": "el sábado",
+          "de": "Samstag",
+          "chapter": "5A"
+        },
+        {
+          "es": "el domingo",
+          "de": "Sonntag",
+          "chapter": "5A"
+        },
+        {
+          "es": "de compras",
+          "de": "beim Einkaufen",
+          "chapter": "5B"
+        },
+        {
+          "es": "la prenda (de ropa)",
+          "de": "das Kleidungsstück",
+          "chapter": "5B"
+        },
+        {
+          "es": "la camiseta",
+          "de": "das T-Shirt",
+          "chapter": "5B"
+        },
+        {
+          "es": "los pantalones",
+          "de": "die Hose",
+          "chapter": "5B"
+        },
+        {
+          "es": "el gorro",
+          "de": "die Mütze",
+          "chapter": "5B"
+        },
+        {
+          "es": "la camisa",
+          "de": "das Hemd",
+          "chapter": "5B"
+        },
+        {
+          "es": "el abrigo",
+          "de": "der Mantel",
+          "chapter": "5B"
+        },
+        {
+          "es": "la chaqueta",
+          "de": "die Jacke",
+          "chapter": "5B"
+        },
+        {
+          "es": "el vestido",
+          "de": "das Kleid",
+          "chapter": "5B"
+        },
+        {
+          "es": "la bufanda",
+          "de": "der Schal",
+          "chapter": "5B"
+        },
+        {
+          "es": "los vaqueros",
+          "de": "die Jeans",
+          "chapter": "5B"
+        },
+        {
+          "es": "la bañador",
+          "de": "der Badeanzug",
+          "chapter": "5B"
+        },
+        {
+          "es": "gris",
+          "de": "grau",
+          "chapter": "5B"
+        },
+        {
+          "es": "marrón",
+          "de": "braun",
+          "chapter": "5B"
+        },
+        {
+          "es": "morado/a",
+          "de": "lila",
+          "chapter": "5B"
+        },
+        {
+          "es": "rojo",
+          "de": "rot",
+          "chapter": "5B"
+        },
+        {
+          "es": "verde",
+          "de": "grün",
+          "chapter": "5B"
+        },
+        {
+          "es": "amarillo/a",
+          "de": "gelb",
+          "chapter": "5B"
+        },
+        {
+          "es": "azul",
+          "de": "blau",
+          "chapter": "5B"
+        },
+        {
+          "es": "blanco/a",
+          "de": "weiß",
+          "chapter": "5B"
+        },
+        {
+          "es": "negro/a",
+          "de": "schwarz",
+          "chapter": "5B"
+        },
+        {
+          "es": "naranja",
+          "de": "orange",
+          "chapter": "5B"
+        },
+        {
+          "es": "el cuadradillo",
+          "de": "das Karomuster",
+          "chapter": "5B"
+        },
+        {
+          "es": "la cinta",
+          "de": "der Gürtel",
+          "chapter": "5B"
+        },
+        {
+          "es": "el cinturón",
+          "de": "der Gürtel",
+          "chapter": "5B"
+        },
+        {
+          "es": "el bolsillo",
+          "de": "die Badehose",
+          "chapter": "5B"
+        },
+        {
+          "es": "el bolso",
+          "de": "die Handtasche",
+          "chapter": "5B"
+        },
+        {
+          "es": "los lunares",
+          "de": "die Gepunkteten",
+          "chapter": "5B"
+        },
+        {
+          "es": "estampado/a",
+          "de": "gemustert, bedruckt",
+          "chapter": "5B"
+        },
+        {
+          "es": "liso/a",
+          "de": "einfarbig",
+          "chapter": "5B"
+        },
+        {
+          "es": "a rayas",
+          "de": "gestreift",
+          "chapter": "5B"
+        },
+        {
+          "es": "a cuadros",
+          "de": "kariert",
+          "chapter": "5B"
+        },
+        {
+          "es": "la tona",
+          "de": "die Wolle",
+          "chapter": "5B"
+        },
+        {
+          "es": "el algodón",
+          "de": "die Baumwolle",
+          "chapter": "5B"
+        },
+        {
+          "es": "el cuero (?)",
+          "de": "das Leder",
+          "chapter": "5B"
+        },
+        {
+          "es": "la seda (?)",
+          "de": "die Seide",
+          "chapter": "5B"
+        },
+        {
+          "es": "¿Qué llevas puesto?",
+          "de": "Was trägst du?",
+          "chapter": "5B"
+        },
+        {
+          "es": "los sábados",
+          "de": "samstags",
+          "chapter": "5B"
+        },
+        {
+          "es": "el acile",
+          "de": "die Strumpfhose",
+          "chapter": "5B"
+        },
+        {
+          "es": "cambiar dinero",
+          "de": "Geld wechseln",
+          "chapter": "5B"
+        },
+        {
+          "es": "los horarios comerciales",
+          "de": "die Geschäftsöffnungszeiten",
+          "chapter": "5B"
+        },
+        {
+          "es": "por la tarde",
+          "de": "nachmittags",
+          "chapter": "5B"
+        },
+        {
+          "es": "abre vez",
+          "de": "noch einmal, wieder",
+          "chapter": "5B"
+        },
+        {
+          "es": "la excepción",
+          "de": "die Ausnahme",
+          "chapter": "5B"
+        },
+        {
+          "es": "aceptar",
+          "de": "annehmen",
+          "chapter": "5B"
+        },
+        {
+          "es": "mucha variedad",
+          "de": "große Vielfalt",
+          "chapter": "5B"
+        },
+        {
+          "es": "normal",
+          "de": "normal",
+          "chapter": "5B"
+        },
+        {
+          "es": "del lunes por semana",
+          "de": "Wochentags pro Woche",
+          "chapter": "5B"
+        },
+        {
+          "es": "generalmente",
+          "de": "im Allgemeinen",
+          "chapter": "5B"
+        },
+        {
+          "es": "suelen abrir/a",
+          "de": "meisten offen sein",
+          "chapter": "5B"
+        },
+        {
+          "es": "flexible",
+          "de": "flexibel",
+          "chapter": "5B"
+        },
+        {
+          "es": "variado/a",
+          "de": "verschieden",
+          "chapter": "5B"
+        },
+        {
+          "es": "el tabaco",
+          "de": "der Tabak",
+          "chapter": "5B"
+        },
+        {
+          "es": "la tarjeta de teléfono",
+          "de": "die Telefonkarte",
+          "chapter": "5B"
+        },
+        {
+          "es": "las chucherías",
+          "de": "die Ansichtskarte",
+          "chapter": "5B"
+        },
+        {
+          "es": "el bolígrafo",
+          "de": "der Kugelschreiber",
+          "chapter": "5B"
+        },
+        {
+          "es": "el lino",
+          "de": "das Leinen",
+          "chapter": "5C"
+        },
+        {
+          "es": "poli (inf. lavar)",
+          "de": "bitte",
+          "chapter": "5C"
+        },
+        {
+          "es": "ocasionalmente",
+          "de": "gelegentlich",
+          "chapter": "5C"
+        },
+        {
+          "es": "depender de",
+          "de": "abhängen von",
+          "chapter": "5C"
+        },
+        {
+          "es": "por tuera",
+          "de": "von außen",
+          "chapter": "5C"
+        },
+        {
+          "es": "por dentro",
+          "de": "von innen",
+          "chapter": "5C"
+        },
+        {
+          "es": "los pijamas",
+          "de": "die Schlafanzug",
+          "chapter": "5C"
+        },
+        {
+          "es": "las banderas",
+          "de": "die Flagge",
+          "chapter": "5C"
+        },
+        {
+          "es": "lo planto",
+          "de": "der Stock",
+          "chapter": "5C"
+        },
+        {
+          "es": "la planta baja",
+          "de": "das Erdgeschoss",
+          "chapter": "5C"
+        },
+        {
+          "es": "el primer piso",
+          "de": "der erste Stock",
+          "chapter": "5C"
+        },
+        {
+          "es": "la sección",
+          "de": "die Abteilung",
+          "chapter": "5C"
+        },
+        {
+          "es": "la librería",
+          "de": "die Buchhandlung",
+          "chapter": "5C"
+        },
+        {
+          "es": "Radios y televisión",
+          "de": "TV und Radios",
+          "chapter": "5C"
+        },
+        {
+          "es": "Electrodomésticos",
+          "de": "Haushaltsgeräte",
+          "chapter": "5C"
+        },
+        {
+          "es": "Moda señora",
+          "de": "Damenmode",
+          "chapter": "5C"
+        },
+        {
+          "es": "Moda niños",
+          "de": "Kindermobe",
+          "chapter": "5C"
+        },
+        {
+          "es": "la agencia de viajes",
+          "de": "das Reisebüro",
+          "chapter": "5C"
+        },
+        {
+          "es": "Cosméticos y perfumería",
+          "de": "Kosmetik und Parfümerie",
+          "chapter": "5C"
+        },
+        {
+          "es": "Joyería",
+          "de": "das Juweliergeschäft",
+          "chapter": "5C"
+        },
+        {
+          "es": "Papelería",
+          "de": "das Schreibwarengeschäft",
+          "chapter": "5C"
+        },
+        {
+          "es": "Informática",
+          "de": "die Informatik",
+          "chapter": "5C"
+        },
+        {
+          "es": "Me queda bien.",
+          "de": "Es passt mir gut.",
+          "chapter": "5C"
+        },
+        {
+          "es": "¿Qué tal le parece…?",
+          "de": "Wie gefällt es Ihnen?",
+          "chapter": "5C"
+        },
+        {
+          "es": "la oferta",
+          "de": "das Angebot",
+          "chapter": "5C"
+        },
+        {
+          "es": "ponerse (yo no me pongo)",
+          "de": "sich anziehen (ich ziehe mir nicht an)",
+          "chapter": "5C"
+        },
+        {
+          "es": "la moda señora",
+          "de": "die Damenmode",
+          "chapter": "5C"
+        },
+        {
+          "es": "el precio",
+          "de": "der Preis",
+          "chapter": "5C"
+        },
+        {
+          "es": "precioso/a",
+          "de": "wunderschön",
+          "chapter": "5C"
+        },
+        {
+          "es": "la consola",
+          "de": "die Konsole",
+          "chapter": "5D"
+        },
+        {
+          "es": "encontrar (ue) por separado",
+          "de": "vorbeikommen",
+          "chapter": "5D"
+        },
+        {
+          "es": "el regalo",
+          "de": "das Geschenk",
+          "chapter": "5D"
+        },
+        {
+          "es": "la entrada",
+          "de": "die Eintrittskarte / der Eintritt",
+          "chapter": "5D"
+        },
+        {
+          "es": "el vino Kremigkeit",
+          "de": "der Wein",
+          "chapter": "5D"
+        },
+        {
+          "es": "la agenda",
+          "de": "der Kalender",
+          "chapter": "5D"
+        },
+        {
+          "es": "regalar",
+          "de": "schenken",
+          "chapter": "5D"
+        },
+        {
+          "es": "(a él/me)",
+          "de": "(für ihn/mir)",
+          "chapter": "5D"
+        },
+        {
+          "es": "(a ti)",
+          "de": "(für dich)",
+          "chapter": "5D"
+        },
+        {
+          "es": "(a ella)",
+          "de": "(für sie)",
+          "chapter": "5D"
+        },
+        {
+          "es": "(a ellos)",
+          "de": "(für sie/Pl.)",
+          "chapter": "5D"
+        },
+        {
+          "es": "(a usted)",
+          "de": "(für Sie)",
+          "chapter": "5D"
+        },
+        {
+          "es": "(a nosotros/as)",
+          "de": "(für uns)",
+          "chapter": "5D"
+        },
+        {
+          "es": "(a vosotros/as)",
+          "de": "(für euch)",
+          "chapter": "5D"
+        },
+        {
+          "es": "(a ustedes/les)",
+          "de": "(für Sie Pl./Ihnen)",
+          "chapter": "5D"
+        },
+        {
+          "es": "el pronombre",
+          "de": "das Pronomen",
+          "chapter": "5D"
+        }
+      ]
+    },
+    "6": {
+      "title": "Así es la vida",
+      "topic": "Alltag, Schule, Tagesroutine, Perfecto, Futuro",
+      "vocab": [
+        {
+          "es": "así es la vida",
+          "de": "so ist das Leben!",
+          "chapter": "6"
+        },
+        {
+          "es": "usar el móvil",
+          "de": "das Handy benutzen",
+          "chapter": "6"
+        },
+        {
+          "es": "ver series o películas",
+          "de": "Filme oder Serien anschauen",
+          "chapter": "6"
+        },
+        {
+          "es": "quedar con amigos/os",
+          "de": "Freunde treffen",
+          "chapter": "6"
+        },
+        {
+          "es": "ir de compras",
+          "de": "shoppen gehen",
+          "chapter": "6"
+        },
+        {
+          "es": "escuchar música",
+          "de": "Musik hören",
+          "chapter": "6"
+        },
+        {
+          "es": "ir a la discoteca / a bailar",
+          "de": "in die Disco gehen",
+          "chapter": "6"
+        },
+        {
+          "es": "hacer la tarea / estudiar",
+          "de": "die Hausübungen machen",
+          "chapter": "6"
+        },
+        {
+          "es": "tener clase particular",
+          "de": "Nachhilfe haben",
+          "chapter": "6"
+        },
+        {
+          "es": "desayunar / almorzar / merendar / cenar",
+          "de": "frühstücken / Mittag / Jause / Abend essen",
+          "chapter": "6"
+        },
+        {
+          "es": "hacer deporte",
+          "de": "Sport machen",
+          "chapter": "6"
+        },
+        {
+          "es": "tomar algo",
+          "de": "etwas trinken gehen",
+          "chapter": "6"
+        },
+        {
+          "es": "siempre / todos los días",
+          "de": "immer / jeden Tag",
+          "chapter": "6"
+        },
+        {
+          "es": "casi siempre / casi todos los días",
+          "de": "fast immer / fast jeden Tag",
+          "chapter": "6"
+        },
+        {
+          "es": "muy a menudo",
+          "de": "sehr oft",
+          "chapter": "6"
+        },
+        {
+          "es": "normalmente / generalmente",
+          "de": "normalerweise / gewöhnlich",
+          "chapter": "6"
+        },
+        {
+          "es": "a veces",
+          "de": "manchmal",
+          "chapter": "6"
+        },
+        {
+          "es": "de vez en cuando",
+          "de": "ab und zu",
+          "chapter": "6"
+        },
+        {
+          "es": "raro vez / casi nunca",
+          "de": "selten / fast nie",
+          "chapter": "6"
+        },
+        {
+          "es": "nunca / jamás",
+          "de": "nie / niemals",
+          "chapter": "6"
+        },
+        {
+          "es": "la silla",
+          "de": "der Sessel / Stuhl",
+          "chapter": "6A"
+        },
+        {
+          "es": "el pegamento",
+          "de": "der Kleber",
+          "chapter": "6A"
+        },
+        {
+          "es": "la pizarra",
+          "de": "die Tafel",
+          "chapter": "6A"
+        },
+        {
+          "es": "el libro",
+          "de": "das Buch",
+          "chapter": "6A"
+        },
+        {
+          "es": "la tijera",
+          "de": "die Schere",
+          "chapter": "6A"
+        },
+        {
+          "es": "la regla",
+          "de": "das Lineal",
+          "chapter": "6A"
+        },
+        {
+          "es": "la mochila",
+          "de": "der Rucksack",
+          "chapter": "6A"
+        },
+        {
+          "es": "la goma",
+          "de": "der Radiergummi",
+          "chapter": "6A"
+        },
+        {
+          "es": "el bolígrafo",
+          "de": "der Kugelschreiber",
+          "chapter": "6A"
+        },
+        {
+          "es": "el rotulador",
+          "de": "der Filzstift",
+          "chapter": "6A"
+        },
+        {
+          "es": "el archivador",
+          "de": "der Ordner",
+          "chapter": "6A"
+        },
+        {
+          "es": "el estuche",
+          "de": "das Mäppchen",
+          "chapter": "6A"
+        },
+        {
+          "es": "el lápiz",
+          "de": "der Bleistift",
+          "chapter": "6A"
+        },
+        {
+          "es": "el cuaderno",
+          "de": "das Heft",
+          "chapter": "6A"
+        },
+        {
+          "es": "la mesa",
+          "de": "der Tisch",
+          "chapter": "6A"
+        },
+        {
+          "es": "Biología",
+          "de": "Biologie",
+          "chapter": "6A"
+        },
+        {
+          "es": "Geografía",
+          "de": "Geografie",
+          "chapter": "6A"
+        },
+        {
+          "es": "Español",
+          "de": "Spanisch",
+          "chapter": "6A"
+        },
+        {
+          "es": "Historia",
+          "de": "Geschichte",
+          "chapter": "6A"
+        },
+        {
+          "es": "Inglés",
+          "de": "Englisch",
+          "chapter": "6A"
+        },
+        {
+          "es": "Matemáticas",
+          "de": "Mathematik",
+          "chapter": "6A"
+        },
+        {
+          "es": "Educación Plástica",
+          "de": "Bildnerische Erziehung",
+          "chapter": "6A"
+        },
+        {
+          "es": "Religión",
+          "de": "Religion",
+          "chapter": "6A"
+        },
+        {
+          "es": "Ética",
+          "de": "Ethik",
+          "chapter": "6A"
+        },
+        {
+          "es": "Música",
+          "de": "Musik",
+          "chapter": "6A"
+        },
+        {
+          "es": "Física",
+          "de": "Physik",
+          "chapter": "6A"
+        },
+        {
+          "es": "Química",
+          "de": "Chemie",
+          "chapter": "6A"
+        },
+        {
+          "es": "Filosofía",
+          "de": "Philosophie",
+          "chapter": "6A"
+        },
+        {
+          "es": "Alemán",
+          "de": "Deutsch",
+          "chapter": "6A"
+        },
+        {
+          "es": "el horario",
+          "de": "der Stundenplan",
+          "chapter": "6A"
+        },
+        {
+          "es": "pensar (ie)",
+          "de": "denken",
+          "chapter": "6A"
+        },
+        {
+          "es": "el patio",
+          "de": "der Hof",
+          "chapter": "6A"
+        },
+        {
+          "es": "la Dirección",
+          "de": "das Direktorat",
+          "chapter": "6A"
+        },
+        {
+          "es": "la secretaría",
+          "de": "das Sekretariat",
+          "chapter": "6A"
+        },
+        {
+          "es": "la sala de profesores",
+          "de": "das Lehrerzimmer",
+          "chapter": "6A"
+        },
+        {
+          "es": "el aula",
+          "de": "das Klassenzimmer",
+          "chapter": "6A"
+        },
+        {
+          "es": "la biblioteca",
+          "de": "die Bibliothek",
+          "chapter": "6A"
+        },
+        {
+          "es": "la mayoría",
+          "de": "die Mehrheit",
+          "chapter": "6A"
+        },
+        {
+          "es": "menos",
+          "de": "weniger",
+          "chapter": "6A"
+        },
+        {
+          "es": "el recreo",
+          "de": "die Pause",
+          "chapter": "6A"
+        },
+        {
+          "es": "la norma",
+          "de": "die Regel",
+          "chapter": "6A"
+        },
+        {
+          "es": "despertarse",
+          "de": "aufwachen",
+          "chapter": "6A"
+        },
+        {
+          "es": "levantarse",
+          "de": "aufstehen",
+          "chapter": "6A"
+        },
+        {
+          "es": "ducharse",
+          "de": "duschen",
+          "chapter": "6A"
+        },
+        {
+          "es": "vestirse",
+          "de": "sich anziehen",
+          "chapter": "6A"
+        },
+        {
+          "es": "peinarse",
+          "de": "sich kämmen",
+          "chapter": "6A"
+        },
+        {
+          "es": "lavarse",
+          "de": "sich waschen",
+          "chapter": "6A"
+        },
+        {
+          "es": "desvestirse",
+          "de": "sich ausziehen",
+          "chapter": "6A"
+        },
+        {
+          "es": "acostarse",
+          "de": "sich hinlegen / schlafen gehen",
+          "chapter": "6A"
+        },
+        {
+          "es": "dormirse",
+          "de": "einschlafen",
+          "chapter": "6A"
+        },
+        {
+          "es": "este mejor",
+          "de": "am besten",
+          "chapter": "6A"
+        },
+        {
+          "es": "el acuario",
+          "de": "das Aquarium",
+          "chapter": "6A"
+        },
+        {
+          "es": "mediterráneo/a",
+          "de": "mediterran",
+          "chapter": "6A"
+        },
+        {
+          "es": "el animal",
+          "de": "das Tier",
+          "chapter": "6A"
+        },
+        {
+          "es": "el tiburón",
+          "de": "der Hai",
+          "chapter": "6A"
+        },
+        {
+          "es": "el pinguino",
+          "de": "der Pinguin",
+          "chapter": "6A"
+        },
+        {
+          "es": "el caimán (Krokodil)",
+          "de": "Krokodil",
+          "chapter": "6A"
+        },
+        {
+          "es": "la superficie",
+          "de": "die Oberfläche",
+          "chapter": "6A"
+        },
+        {
+          "es": "transparente",
+          "de": "durchsichtig",
+          "chapter": "6A"
+        },
+        {
+          "es": "permitir",
+          "de": "ermöglichen",
+          "chapter": "6A"
+        },
+        {
+          "es": "visitar el fondo del mar",
+          "de": "Meerestieren beobachten",
+          "chapter": "6A"
+        },
+        {
+          "es": "observar",
+          "de": "beobachten",
+          "chapter": "6A"
+        },
+        {
+          "es": "marino/a",
+          "de": "marin",
+          "chapter": "6A"
+        },
+        {
+          "es": "la tortuga",
+          "de": "die Schildkröte",
+          "chapter": "6A"
+        },
+        {
+          "es": "la visita",
+          "de": "die Besichtigung",
+          "chapter": "6A"
+        },
+        {
+          "es": "panorámica",
+          "de": "Panorama-",
+          "chapter": "6A"
+        },
+        {
+          "es": "poner el despertador",
+          "de": "Wecker stellen",
+          "chapter": "6A"
+        },
+        {
+          "es": "sonar (ue)",
+          "de": "klingen / läuten",
+          "chapter": "6A"
+        },
+        {
+          "es": "ir en bici",
+          "de": "mit dem Fahrrad fahren",
+          "chapter": "6A"
+        },
+        {
+          "es": "ir a pie",
+          "de": "zu Fuß gehen",
+          "chapter": "6A"
+        },
+        {
+          "es": "o sea de los",
+          "de": "30 % von",
+          "chapter": "6A"
+        },
+        {
+          "es": "más o menos",
+          "de": "mehr oder weniger",
+          "chapter": "6A"
+        },
+        {
+          "es": "más de la mitad de",
+          "de": "mehr als die Hälfte von",
+          "chapter": "6A"
+        },
+        {
+          "es": "un cuarto de un tercio",
+          "de": "ein Viertel / ein Drittel",
+          "chapter": "6A"
+        },
+        {
+          "es": "las tareas de la casa",
+          "de": "die Hausarbeit",
+          "chapter": "6A"
+        },
+        {
+          "es": "lavar (ue)",
+          "de": "waschen",
+          "chapter": "6A"
+        },
+        {
+          "es": "sacar (ue)",
+          "de": "rausnehmen",
+          "chapter": "6A"
+        },
+        {
+          "es": "colgar la ropa",
+          "de": "Kleidung aufhängen",
+          "chapter": "6A"
+        },
+        {
+          "es": "lavar los platos",
+          "de": "Geschirr spülen",
+          "chapter": "6A"
+        },
+        {
+          "es": "poner (yo) (inf. poner)",
+          "de": "hier: einschalten",
+          "chapter": "6A"
+        },
+        {
+          "es": "planchar",
+          "de": "bügeln",
+          "chapter": "6A"
+        },
+        {
+          "es": "lavar la ropa",
+          "de": "Wäsche waschen",
+          "chapter": "6A"
+        },
+        {
+          "es": "ordenar la casa",
+          "de": "aufräumen",
+          "chapter": "6A"
+        },
+        {
+          "es": "sacar la basura",
+          "de": "den Müll rausstellen",
+          "chapter": "6A"
+        },
+        {
+          "es": "cocinar",
+          "de": "kochen",
+          "chapter": "6A"
+        },
+        {
+          "es": "poner el lavavajillas",
+          "de": "Geschirrspüler einräumen",
+          "chapter": "6A"
+        },
+        {
+          "es": "poner al perro",
+          "de": "mit dem Hund spazieren gehen",
+          "chapter": "6A"
+        },
+        {
+          "es": "limpiar las ventanas",
+          "de": "Fenster putzen",
+          "chapter": "6A"
+        },
+        {
+          "es": "pasar el aspirador",
+          "de": "Staubsaugen",
+          "chapter": "6A"
+        },
+        {
+          "es": "hacer la cama",
+          "de": "das Bett machen",
+          "chapter": "6A"
+        },
+        {
+          "es": "el piso bajo",
+          "de": "die untere Etage",
+          "chapter": "6A"
+        },
+        {
+          "es": "el plano bajo",
+          "de": "das Erdgeschoss (angepasst)",
+          "chapter": "6A"
+        },
+        {
+          "es": "mudarse",
+          "de": "umziehen",
+          "chapter": "6B"
+        },
+        {
+          "es": "echar de menos",
+          "de": "vermissen",
+          "chapter": "6B"
+        },
+        {
+          "es": "hacer bien",
+          "de": "gut tun",
+          "chapter": "6B"
+        },
+        {
+          "es": "alquilar",
+          "de": "mieten",
+          "chapter": "6B"
+        },
+        {
+          "es": "charlar",
+          "de": "plaudern",
+          "chapter": "6B"
+        },
+        {
+          "es": "cocinar/a (inf. cocinar)",
+          "de": "gekocht",
+          "chapter": "6B"
+        },
+        {
+          "es": "reírse (i)",
+          "de": "lachen",
+          "chapter": "6B"
+        },
+        {
+          "es": "reírse de alguien",
+          "de": "jemanden auslachen",
+          "chapter": "6B"
+        },
+        {
+          "es": "fantástico/a",
+          "de": "phantastisch",
+          "chapter": "6B"
+        },
+        {
+          "es": "divertido/a",
+          "de": "lustig",
+          "chapter": "6B"
+        },
+        {
+          "es": "agotador/a",
+          "de": "anstrengend",
+          "chapter": "6B"
+        },
+        {
+          "es": "aburrirse",
+          "de": "sich langweilen",
+          "chapter": "6B"
+        },
+        {
+          "es": "participar",
+          "de": "teilnehmen",
+          "chapter": "6B"
+        },
+        {
+          "es": "repasar",
+          "de": "wiederholen",
+          "chapter": "6B"
+        },
+        {
+          "es": "volver a hacer",
+          "de": "etwas nochmals machen",
+          "chapter": "6B"
+        },
+        {
+          "es": "excusar (ie)",
+          "de": "sich entschuldigen",
+          "chapter": "6B"
+        },
+        {
+          "es": "tomar apuntes",
+          "de": "sich Notizen machen",
+          "chapter": "6B"
+        },
+        {
+          "es": "romper",
+          "de": "bersten",
+          "chapter": "6B"
+        },
+        {
+          "es": "de todos modos",
+          "de": "trotzdem",
+          "chapter": "6B"
+        },
+        {
+          "es": "sexista",
+          "de": "sexistisch",
+          "chapter": "6B"
+        },
+        {
+          "es": "salir de la rutina",
+          "de": "aus dem Alltag ausbrechen",
+          "chapter": "6C"
+        },
+        {
+          "es": "la rutina",
+          "de": "die Routine",
+          "chapter": "6C"
+        },
+        {
+          "es": "enamorado/a (de)",
+          "de": "verliebt (in)",
+          "chapter": "6D"
+        },
+        {
+          "es": "el Grund",
+          "de": "der Grund",
+          "chapter": "6D"
+        },
+        {
+          "es": "el motivo",
+          "de": "das Motiv",
+          "chapter": "6D"
+        },
+        {
+          "es": "egoísta",
+          "de": "eigennützig",
+          "chapter": "6D"
+        },
+        {
+          "es": "estar ocupado/a",
+          "de": "beschäftigt sein",
+          "chapter": "6D"
+        }
+      ]
+    }
+  }
+}
