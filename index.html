@@ -477,7 +477,6 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
   </div>
 </div>
 
-</div><!-- #app -->
 <script>
 // ══ VOCAB ═════════════════════════════════════════════════════
 const FALLBACK = {
@@ -885,7 +884,8 @@ function renderQuestion() {
 }
 
 function escQ(s) {
-  return (s || '').replace(/\/g, '\\').replace(/'/g, "\'").replace(/"/g, '&quot;');
+  if (!s) return '';
+  return s.replace(/'/g, '&#39;').replace(/"/g, '&quot;');
 }
 function normalize(s) {
   return s.trim().toLowerCase()
@@ -1036,5 +1036,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').catch(() => {});
 }
 </script>
+
+</div><!-- #app -->
 </body>
 </html>
