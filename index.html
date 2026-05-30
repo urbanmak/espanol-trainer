@@ -1016,19 +1016,21 @@ function checkInstallBanner() {
 }
 
 // ══ INIT ═══════════════════════════════════════════════════════
-selectMode('mc');
-selectDir('es');
-selectCount(15);
-renderStats();
-checkInstallBanner();
-renderUnitCards();
-renderThemeGrid();
-// mark 'all' selected after cards rendered
-state.unit = 'all';
-state.selectionType = 'unit';
-const firstCard = document.querySelector('.unit-card-home[data-unit="all"]');
-if (firstCard) firstCard.classList.add('selected');
-loadVocab();
+document.addEventListener('DOMContentLoaded', function() {
+  selectMode('mc');
+  selectDir('es');
+  selectCount(15);
+  renderStats();
+  checkInstallBanner();
+  renderUnitCards();
+  renderThemeGrid();
+  // mark 'all' selected
+  state.unit = 'all';
+  state.selectionType = 'unit';
+  const firstCard = document.querySelector('.unit-card-home[data-unit="all"]');
+  if (firstCard) firstCard.classList.add('selected');
+  loadVocab();
+});
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').catch(() => {});
