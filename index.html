@@ -39,7 +39,9 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 /* ══ HOME ══════════════════════════════════════════════════ */
 #screen-home{padding:20px 20px 32px;gap:0}
 .home-header{padding-top:8px;margin-bottom:20px}
-.home-header .logo-img{width:100%;max-width:260px;height:auto;display:block;margin-bottom:12px}
+.home-header .logo-row{display:flex;align-items:center;justify-content:space-between;
+  gap:14px;margin-bottom:12px}
+.home-header .logo-img{width:100%;max-width:260px;height:auto;display:block;min-width:0}
 .home-header .lang-row{display:flex;align-items:center;gap:8px;margin-bottom:4px}
 .home-header .lang-badge{font-size:10px;font-weight:600;letter-spacing:.1em;
   text-transform:uppercase;color:#04141f;background:var(--accent);
@@ -115,6 +117,7 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 .setup-back{width:34px;height:34px;border-radius:50%;background:var(--surface);
   border:.5px solid var(--border);display:flex;align-items:center;justify-content:center;
   cursor:pointer;font-size:18px;color:var(--text2);flex-shrink:0}
+.setup-heading{flex:1;min-width:0}
 .setup-title{font-size:16px;font-weight:500;color:var(--text);flex:1}
 .setup-subtitle{font-size:12px;color:var(--text3);margin-top:1px}
 
@@ -187,7 +190,7 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 
 /* ══ QUIZ ══════════════════════════════════════════════════ */
 #screen-quiz{padding:0}
-.quiz-header{padding:calc(var(--safe-top) + 14px) 20px 14px;
+.quiz-header{padding:10px 20px 14px;
   display:flex;align-items:center;gap:10px;background:var(--bg);flex-shrink:0}
 .quiz-back{width:34px;height:34px;border-radius:50%;background:var(--surface);
   border:.5px solid var(--border);display:flex;align-items:center;justify-content:center;
@@ -262,7 +265,9 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 .next-btn:active{transform:scale(.98)}
 
 /* ══ RESULTS ══════════════════════════════════════════════ */
-#screen-results{padding:32px 20px 40px;align-items:center;
+#screen-results{padding:0}
+.results-body{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;
+  padding:12px 20px 40px;display:flex;flex-direction:column;align-items:center;
   justify-content:center;text-align:center;gap:20px}
 .results-emoji{font-size:56px;line-height:1}
 .results-title{font-family:'DM Serif Display',serif;font-size:28px;color:var(--text);line-height:1.2}
@@ -293,7 +298,9 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 .pop{animation:pop .22s ease}
 
 /* ══ BURGER-MENÜ ═══════════════════════════════════════════ */
-.burger-btn{position:fixed;top:16px;right:16px;z-index:200;width:42px;height:42px;
+.app-bar{padding:calc(var(--safe-top) + 14px) 20px 0;display:flex;align-items:center;
+  justify-content:flex-end;background:var(--bg);flex-shrink:0}
+.burger-btn{flex-shrink:0;width:42px;height:42px;
   border-radius:12px;background:var(--surface2);border:1px solid var(--surface3);
   display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;
   color:var(--text2);transition:background .15s}
@@ -323,7 +330,6 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 <div id="app">
 
 <!-- ══ BURGER-MENÜ ══════════════════════════════ -->
-<button class="burger-btn" id="burger-btn" onclick="toggleMenu(true)" aria-label="Menü öffnen">☰</button>
 <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu(false)"></div>
 <nav class="menu-drawer" id="menu-drawer">
   <button class="menu-close" onclick="toggleMenu(false)" aria-label="Menü schließen">✕</button>
@@ -336,7 +342,10 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 <!-- ══ HOME ══════════════════════════════════════════════════ -->
 <div id="screen-home" class="screen active">
   <div class="home-header">
-    <img class="logo-img" src="wave-logo-header.png" alt="Wave – Dein Vokabel-Trainer">
+    <div class="logo-row">
+      <img class="logo-img" src="wave-logo-header.png" alt="Wave – Dein Vokabel-Trainer">
+      <button class="burger-btn" onclick="toggleMenu(true)" aria-label="Menü öffnen">☰</button>
+    </div>
     <div class="lang-row">
       <span class="lang-badge">ES</span>
       <span class="lang-label">Español</span>
@@ -389,10 +398,11 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 <div id="screen-setup" class="screen">
   <div class="setup-header">
     <div class="setup-back" onclick="showScreen('home')">‹</div>
-    <div>
+    <div class="setup-heading">
       <div class="setup-title" id="setup-title">Unidad 1</div>
       <div class="setup-subtitle" id="setup-subtitle">Wähle Kapitel & Einstellungen</div>
     </div>
+    <button class="burger-btn" onclick="toggleMenu(true)" aria-label="Menü öffnen">☰</button>
   </div>
 
   <div class="setup-body">
@@ -472,6 +482,9 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 
 <!-- ══ QUIZ ══════════════════════════════════════════════════ -->
 <div id="screen-quiz" class="screen">
+  <div class="app-bar">
+    <button class="burger-btn" onclick="toggleMenu(true)" aria-label="Menü öffnen">☰</button>
+  </div>
   <div class="quiz-header">
     <div class="quiz-back" onclick="goHome()">‹</div>
     <div class="quiz-progress-wrap">
@@ -490,28 +503,33 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 
 <!-- ══ RESULTS ════════════════════════════════════════════════ -->
 <div id="screen-results" class="screen">
-  <div class="results-emoji" id="res-emoji">🎉</div>
-  <div class="results-title" id="res-title">Gut gemacht!</div>
-  <div class="results-score"><span id="res-pct">0</span><small>%</small></div>
-  <div class="results-sub" id="res-sub"></div>
-  <div class="results-breakdown">
-    <div class="breakdown-item">
-      <div class="val" id="res-correct" style="color:var(--correct)">0</div>
-      <div class="lbl">Richtig</div>
-    </div>
-    <div class="breakdown-item">
-      <div class="val" id="res-wrong" style="color:var(--wrong)">0</div>
-      <div class="lbl">Falsch</div>
-    </div>
-    <div class="breakdown-item">
-      <div class="val" id="res-total" style="color:var(--text2)">0</div>
-      <div class="lbl">Gesamt</div>
-    </div>
+  <div class="app-bar">
+    <button class="burger-btn" onclick="toggleMenu(true)" aria-label="Menü öffnen">☰</button>
   </div>
-  <div class="results-btns">
-    <button class="start-btn" onclick="startQuiz()">Nochmal →</button>
-    <button class="sec-btn" onclick="goHome()">Einstellungen ändern</button>
-  </div>
+  <div class="results-body">
+    <div class="results-emoji" id="res-emoji">🎉</div>
+    <div class="results-title" id="res-title">Gut gemacht!</div>
+    <div class="results-score"><span id="res-pct">0</span><small>%</small></div>
+    <div class="results-sub" id="res-sub"></div>
+    <div class="results-breakdown">
+      <div class="breakdown-item">
+        <div class="val" id="res-correct" style="color:var(--correct)">0</div>
+        <div class="lbl">Richtig</div>
+      </div>
+      <div class="breakdown-item">
+        <div class="val" id="res-wrong" style="color:var(--wrong)">0</div>
+        <div class="lbl">Falsch</div>
+      </div>
+      <div class="breakdown-item">
+        <div class="val" id="res-total" style="color:var(--text2)">0</div>
+        <div class="lbl">Gesamt</div>
+      </div>
+    </div>
+    <div class="results-btns">
+      <button class="start-btn" onclick="startQuiz()">Nochmal →</button>
+      <button class="sec-btn" onclick="goHome()">Einstellungen ändern</button>
+    </div>
+  </div><!-- .results-body -->
 </div>
 
 <script>
