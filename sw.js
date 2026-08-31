@@ -1,5 +1,8 @@
-const CACHE = 'espanol-v1';
-const FILES = ['/', '/index.html', '/manifest.json'];
+const CACHE = 'espanol-v2'; // war: espanol-v1 -- Bump wegen neuer Seiten
+const FILES = [
+  '/', '/index.html', '/manifest.json',
+  '/woerterbuch.html', '/konjugation.html'
+];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)));

@@ -1,0 +1,1028 @@
+{
+  "_meta": {
+    "note": "Presente de indicativo, extrahiert aus vocab.json (Caminos 1, U1-U6). Für zukünftigen Grammatik-Modus.",
+    "total_verbs": 85
+  },
+  "verbs": {
+    "aceptar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "annehmen",
+      "presente": {
+        "yo": "acepto",
+        "tu": "aceptas",
+        "el_ella_usted": "acepta",
+        "nosotros": "aceptamos",
+        "vosotros": "aceptáis",
+        "ellos": "aceptan"
+      }
+    },
+    "admirar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "bewundern",
+      "presente": {
+        "yo": "admiro",
+        "tu": "admiras",
+        "el_ella_usted": "admira",
+        "nosotros": "admiramos",
+        "vosotros": "admiráis",
+        "ellos": "admiran"
+      }
+    },
+    "alquilar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "mieten",
+      "presente": {
+        "yo": "alquilo",
+        "tu": "alquilas",
+        "el_ella_usted": "alquila",
+        "nosotros": "alquilamos",
+        "vosotros": "alquiláis",
+        "ellos": "alquilan"
+      }
+    },
+    "cambiar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "wechseln",
+      "presente": {
+        "yo": "cambio",
+        "tu": "cambias",
+        "el_ella_usted": "cambia",
+        "nosotros": "cambiamos",
+        "vosotros": "cambiáis",
+        "ellos": "cambian"
+      }
+    },
+    "cenar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "zu Abend essen",
+      "presente": {
+        "yo": "ceno",
+        "tu": "cenas",
+        "el_ella_usted": "cena",
+        "nosotros": "cenamos",
+        "vosotros": "cenáis",
+        "ellos": "cenan"
+      }
+    },
+    "charlar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "plaudern",
+      "presente": {
+        "yo": "charlo",
+        "tu": "charlas",
+        "el_ella_usted": "charla",
+        "nosotros": "charlamos",
+        "vosotros": "charláis",
+        "ellos": "charlan"
+      }
+    },
+    "cobrar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "kassieren",
+      "presente": {
+        "yo": "cobro",
+        "tu": "cobras",
+        "el_ella_usted": "cobra",
+        "nosotros": "cobramos",
+        "vosotros": "cobráis",
+        "ellos": "cobran"
+      }
+    },
+    "cocinar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "kochen",
+      "presente": {
+        "yo": "cocino",
+        "tu": "cocinas",
+        "el_ella_usted": "cocina",
+        "nosotros": "cocinamos",
+        "vosotros": "cocináis",
+        "ellos": "cocinan"
+      }
+    },
+    "descansar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "sich erholen",
+      "presente": {
+        "yo": "descanso",
+        "tu": "descansas",
+        "el_ella_usted": "descansa",
+        "nosotros": "descansamos",
+        "vosotros": "descansáis",
+        "ellos": "descansan"
+      }
+    },
+    "desayunar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "frühstücken",
+      "presente": {
+        "yo": "desayuno",
+        "tu": "desayunas",
+        "el_ella_usted": "desayuna",
+        "nosotros": "desayunamos",
+        "vosotros": "desayunáis",
+        "ellos": "desayunan"
+      }
+    },
+    "disfrutar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "genießen",
+      "presente": {
+        "yo": "disfruto",
+        "tu": "disfrutas",
+        "el_ella_usted": "disfruta",
+        "nosotros": "disfrutamos",
+        "vosotros": "disfrutáis",
+        "ellos": "disfrutan"
+      }
+    },
+    "echar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "werfen/vermissen(echar de menos)",
+      "presente": {
+        "yo": "echo",
+        "tu": "echas",
+        "el_ella_usted": "echa",
+        "nosotros": "echamos",
+        "vosotros": "echáis",
+        "ellos": "echan"
+      }
+    },
+    "escuchar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "hören/zuhören",
+      "presente": {
+        "yo": "escucho",
+        "tu": "escuchas",
+        "el_ella_usted": "escucha",
+        "nosotros": "escuchamos",
+        "vosotros": "escucháis",
+        "ellos": "escuchan"
+      }
+    },
+    "excusar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "entschuldigen (⚠ meist reflexiv: excusarse)",
+      "presente": {
+        "yo": "excuso",
+        "tu": "excusas",
+        "el_ella_usted": "excusa",
+        "nosotros": "excusamos",
+        "vosotros": "excusáis",
+        "ellos": "excusan"
+      }
+    },
+    "girar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "abbiegen",
+      "presente": {
+        "yo": "giro",
+        "tu": "giras",
+        "el_ella_usted": "gira",
+        "nosotros": "giramos",
+        "vosotros": "giráis",
+        "ellos": "giran"
+      }
+    },
+    "gustar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "gefallen (⚠ meist unpersönlich: me/te/le gusta)",
+      "presente": {
+        "yo": "gusto",
+        "tu": "gustas",
+        "el_ella_usted": "gusta",
+        "nosotros": "gustamos",
+        "vosotros": "gustáis",
+        "ellos": "gustan"
+      }
+    },
+    "hablar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "sprechen",
+      "presente": {
+        "yo": "hablo",
+        "tu": "hablas",
+        "el_ella_usted": "habla",
+        "nosotros": "hablamos",
+        "vosotros": "habláis",
+        "ellos": "hablan"
+      }
+    },
+    "lavar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "waschen",
+      "presente": {
+        "yo": "lavo",
+        "tu": "lavas",
+        "el_ella_usted": "lava",
+        "nosotros": "lavamos",
+        "vosotros": "laváis",
+        "ellos": "lavan"
+      }
+    },
+    "llegar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "ankommen",
+      "presente": {
+        "yo": "llego",
+        "tu": "llegas",
+        "el_ella_usted": "llega",
+        "nosotros": "llegamos",
+        "vosotros": "llegáis",
+        "ellos": "llegan"
+      }
+    },
+    "observar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "beobachten",
+      "presente": {
+        "yo": "observo",
+        "tu": "observas",
+        "el_ella_usted": "observa",
+        "nosotros": "observamos",
+        "vosotros": "observáis",
+        "ellos": "observan"
+      }
+    },
+    "opinar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "meinen",
+      "presente": {
+        "yo": "opino",
+        "tu": "opinas",
+        "el_ella_usted": "opina",
+        "nosotros": "opinamos",
+        "vosotros": "opináis",
+        "ellos": "opinan"
+      }
+    },
+    "ordenar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "aufräumen",
+      "presente": {
+        "yo": "ordeno",
+        "tu": "ordenas",
+        "el_ella_usted": "ordena",
+        "nosotros": "ordenamos",
+        "vosotros": "ordenáis",
+        "ellos": "ordenan"
+      }
+    },
+    "pagar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "bezahlen",
+      "presente": {
+        "yo": "pago",
+        "tu": "pagas",
+        "el_ella_usted": "paga",
+        "nosotros": "pagamos",
+        "vosotros": "pagáis",
+        "ellos": "pagan"
+      }
+    },
+    "participar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "teilnehmen",
+      "presente": {
+        "yo": "participo",
+        "tu": "participas",
+        "el_ella_usted": "participa",
+        "nosotros": "participamos",
+        "vosotros": "participáis",
+        "ellos": "participan"
+      }
+    },
+    "pasar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "verbringen/vorbeigehen",
+      "presente": {
+        "yo": "paso",
+        "tu": "pasas",
+        "el_ella_usted": "pasa",
+        "nosotros": "pasamos",
+        "vosotros": "pasáis",
+        "ellos": "pasan"
+      }
+    },
+    "planchar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "bügeln",
+      "presente": {
+        "yo": "plancho",
+        "tu": "planchas",
+        "el_ella_usted": "plancha",
+        "nosotros": "planchamos",
+        "vosotros": "plancháis",
+        "ellos": "planchan"
+      }
+    },
+    "presentar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "vorstellen",
+      "presente": {
+        "yo": "presento",
+        "tu": "presentas",
+        "el_ella_usted": "presenta",
+        "nosotros": "presentamos",
+        "vosotros": "presentáis",
+        "ellos": "presentan"
+      }
+    },
+    "quedar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "sich treffen/bleiben",
+      "presente": {
+        "yo": "quedo",
+        "tu": "quedas",
+        "el_ella_usted": "queda",
+        "nosotros": "quedamos",
+        "vosotros": "quedáis",
+        "ellos": "quedan"
+      }
+    },
+    "regalar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "schenken",
+      "presente": {
+        "yo": "regalo",
+        "tu": "regalas",
+        "el_ella_usted": "regala",
+        "nosotros": "regalamos",
+        "vosotros": "regaláis",
+        "ellos": "regalan"
+      }
+    },
+    "repasar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "wiederholen",
+      "presente": {
+        "yo": "repaso",
+        "tu": "repasas",
+        "el_ella_usted": "repasa",
+        "nosotros": "repasamos",
+        "vosotros": "repasáis",
+        "ellos": "repasan"
+      }
+    },
+    "saludar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "grüßen",
+      "presente": {
+        "yo": "saludo",
+        "tu": "saludas",
+        "el_ella_usted": "saluda",
+        "nosotros": "saludamos",
+        "vosotros": "saludáis",
+        "ellos": "saludan"
+      }
+    },
+    "tomar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "nehmen/trinken",
+      "presente": {
+        "yo": "tomo",
+        "tu": "tomas",
+        "el_ella_usted": "toma",
+        "nosotros": "tomamos",
+        "vosotros": "tomáis",
+        "ellos": "toman"
+      }
+    },
+    "trabajar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "arbeiten",
+      "presente": {
+        "yo": "trabajo",
+        "tu": "trabajas",
+        "el_ella_usted": "trabaja",
+        "nosotros": "trabajamos",
+        "vosotros": "trabajáis",
+        "ellos": "trabajan"
+      }
+    },
+    "usar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "benutzen",
+      "presente": {
+        "yo": "uso",
+        "tu": "usas",
+        "el_ella_usted": "usa",
+        "nosotros": "usamos",
+        "vosotros": "usáis",
+        "ellos": "usan"
+      }
+    },
+    "visitar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "besuchen",
+      "presente": {
+        "yo": "visito",
+        "tu": "visitas",
+        "el_ella_usted": "visita",
+        "nosotros": "visitamos",
+        "vosotros": "visitáis",
+        "ellos": "visitan"
+      }
+    },
+    "aprender": {
+      "type": "regelmäßig -er",
+      "meaning_de": "lernen",
+      "presente": {
+        "yo": "aprendo",
+        "tu": "aprendes",
+        "el_ella_usted": "aprende",
+        "nosotros": "aprendemos",
+        "vosotros": "aprendéis",
+        "ellos": "aprenden"
+      }
+    },
+    "comer": {
+      "type": "regelmäßig -er",
+      "meaning_de": "essen",
+      "presente": {
+        "yo": "como",
+        "tu": "comes",
+        "el_ella_usted": "come",
+        "nosotros": "comemos",
+        "vosotros": "coméis",
+        "ellos": "comen"
+      }
+    },
+    "depender": {
+      "type": "regelmäßig -er",
+      "meaning_de": "abhängen",
+      "presente": {
+        "yo": "dependo",
+        "tu": "dependes",
+        "el_ella_usted": "depende",
+        "nosotros": "dependemos",
+        "vosotros": "dependéis",
+        "ellos": "dependen"
+      }
+    },
+    "leer": {
+      "type": "regelmäßig -er",
+      "meaning_de": "lesen",
+      "presente": {
+        "yo": "leo",
+        "tu": "lees",
+        "el_ella_usted": "lee",
+        "nosotros": "leemos",
+        "vosotros": "leéis",
+        "ellos": "leen"
+      }
+    },
+    "romper": {
+      "type": "regelmäßig -er",
+      "meaning_de": "kaputt machen",
+      "presente": {
+        "yo": "rompo",
+        "tu": "rompes",
+        "el_ella_usted": "rompe",
+        "nosotros": "rompemos",
+        "vosotros": "rompéis",
+        "ellos": "rompen"
+      }
+    },
+    "descubrir": {
+      "type": "regelmäßig -ir",
+      "meaning_de": "entdecken",
+      "presente": {
+        "yo": "descubro",
+        "tu": "descubres",
+        "el_ella_usted": "descubre",
+        "nosotros": "descubrimos",
+        "vosotros": "descubrís",
+        "ellos": "descubren"
+      }
+    },
+    "permitir": {
+      "type": "regelmäßig -ir",
+      "meaning_de": "erlauben",
+      "presente": {
+        "yo": "permito",
+        "tu": "permites",
+        "el_ella_usted": "permite",
+        "nosotros": "permitimos",
+        "vosotros": "permitís",
+        "ellos": "permiten"
+      }
+    },
+    "vivir": {
+      "type": "regelmäßig -ir",
+      "meaning_de": "wohnen/leben",
+      "presente": {
+        "yo": "vivo",
+        "tu": "vives",
+        "el_ella_usted": "vive",
+        "nosotros": "vivimos",
+        "vosotros": "vivís",
+        "ellos": "viven"
+      }
+    },
+    "limpiar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "putzen",
+      "presente": {
+        "yo": "limpio",
+        "tu": "limpias",
+        "el_ella_usted": "limpia",
+        "nosotros": "limpiamos",
+        "vosotros": "limpiáis",
+        "ellos": "limpian"
+      }
+    },
+    "perdonar": {
+      "type": "regelmäßig -ar",
+      "meaning_de": "verzeihen",
+      "presente": {
+        "yo": "perdono",
+        "tu": "perdonas",
+        "el_ella_usted": "perdona",
+        "nosotros": "perdonamos",
+        "vosotros": "perdonáis",
+        "ellos": "perdonan"
+      }
+    },
+    "sacar": {
+      "type": "unregelmäßig (c→qu, nur im Indefinido; Präsens regelmäßig)",
+      "meaning_de": "herausnehmen",
+      "presente": {
+        "yo": "saco",
+        "tu": "sacas",
+        "el_ella_usted": "saca",
+        "nosotros": "sacamos",
+        "vosotros": "sacáis",
+        "ellos": "sacan"
+      }
+    },
+    "cerrar": {
+      "type": "Stammbrechung e→ie",
+      "meaning_de": "schließen",
+      "presente": {
+        "yo": "cierro",
+        "tu": "cierras",
+        "el_ella_usted": "cierra",
+        "nosotros": "cerramos",
+        "vosotros": "cerráis",
+        "ellos": "cierran"
+      }
+    },
+    "pensar": {
+      "type": "Stammbrechung e→ie",
+      "meaning_de": "denken",
+      "presente": {
+        "yo": "pienso",
+        "tu": "piensas",
+        "el_ella_usted": "piensa",
+        "nosotros": "pensamos",
+        "vosotros": "pensáis",
+        "ellos": "piensan"
+      }
+    },
+    "extender": {
+      "type": "Stammbrechung e→ie",
+      "meaning_de": "ausdehnen",
+      "presente": {
+        "yo": "extiendo",
+        "tu": "extiendes",
+        "el_ella_usted": "extiende",
+        "nosotros": "extendemos",
+        "vosotros": "extendéis",
+        "ellos": "extienden"
+      }
+    },
+    "querer": {
+      "type": "Stammbrechung e→ie",
+      "meaning_de": "wollen",
+      "presente": {
+        "yo": "quiero",
+        "tu": "quieres",
+        "el_ella_usted": "quiere",
+        "nosotros": "queremos",
+        "vosotros": "queréis",
+        "ellos": "quieren"
+      }
+    },
+    "almorzar": {
+      "type": "Stammbrechung o→ue",
+      "meaning_de": "zu Mittag essen",
+      "presente": {
+        "yo": "almuerzo",
+        "tu": "almuerzas",
+        "el_ella_usted": "almuerza",
+        "nosotros": "almorzamos",
+        "vosotros": "almorzáis",
+        "ellos": "almuerzan"
+      }
+    },
+    "colgar": {
+      "type": "Stammbrechung o→ue",
+      "meaning_de": "aufhängen",
+      "presente": {
+        "yo": "cuelgo",
+        "tu": "cuelgas",
+        "el_ella_usted": "cuelga",
+        "nosotros": "colgamos",
+        "vosotros": "colgáis",
+        "ellos": "cuelgan"
+      }
+    },
+    "contar": {
+      "type": "Stammbrechung o→ue",
+      "meaning_de": "zählen/erzählen",
+      "presente": {
+        "yo": "cuento",
+        "tu": "cuentas",
+        "el_ella_usted": "cuenta",
+        "nosotros": "contamos",
+        "vosotros": "contáis",
+        "ellos": "cuentan"
+      }
+    },
+    "costar": {
+      "type": "Stammbrechung o→ue",
+      "meaning_de": "kosten",
+      "presente": {
+        "yo": "cuesto",
+        "tu": "cuestas",
+        "el_ella_usted": "cuesta",
+        "nosotros": "costamos",
+        "vosotros": "costáis",
+        "ellos": "cuestan"
+      }
+    },
+    "encontrar": {
+      "type": "Stammbrechung o→ue",
+      "meaning_de": "finden/treffen",
+      "presente": {
+        "yo": "encuentro",
+        "tu": "encuentras",
+        "el_ella_usted": "encuentra",
+        "nosotros": "encontramos",
+        "vosotros": "encontráis",
+        "ellos": "encuentran"
+      }
+    },
+    "soler": {
+      "type": "Stammbrechung o→ue",
+      "meaning_de": "gewohnt sein etw. zu tun",
+      "presente": {
+        "yo": "suelo",
+        "tu": "sueles",
+        "el_ella_usted": "suele",
+        "nosotros": "solemos",
+        "vosotros": "soléis",
+        "ellos": "suelen"
+      }
+    },
+    "sonar": {
+      "type": "Stammbrechung o→ue",
+      "meaning_de": "klingen/läuten",
+      "presente": {
+        "yo": "sueno",
+        "tu": "suenas",
+        "el_ella_usted": "suena",
+        "nosotros": "sonamos",
+        "vosotros": "sonáis",
+        "ellos": "suenan"
+      }
+    },
+    "volver": {
+      "type": "Stammbrechung o→ue",
+      "meaning_de": "zurückkommen",
+      "presente": {
+        "yo": "vuelvo",
+        "tu": "vuelves",
+        "el_ella_usted": "vuelve",
+        "nosotros": "volvemos",
+        "vosotros": "volvéis",
+        "ellos": "vuelven"
+      }
+    },
+    "pedir": {
+      "type": "Stammbrechung e→i",
+      "meaning_de": "bestellen/bitten",
+      "presente": {
+        "yo": "pido",
+        "tu": "pides",
+        "el_ella_usted": "pide",
+        "nosotros": "pedimos",
+        "vosotros": "pedís",
+        "ellos": "piden"
+      }
+    },
+    "seguir": {
+      "type": "Stammbrechung e→i (+Rechtschreibung gu→g)",
+      "meaning_de": "folgen/weitermachen",
+      "presente": {
+        "yo": "sigo",
+        "tu": "sigues",
+        "el_ella_usted": "sigue",
+        "nosotros": "seguimos",
+        "vosotros": "seguís",
+        "ellos": "siguen"
+      }
+    },
+    "coger": {
+      "type": "unregelmäßig (g→j)",
+      "meaning_de": "nehmen (Verkehrsmittel)",
+      "presente": {
+        "yo": "cojo",
+        "tu": "coges",
+        "el_ella_usted": "coge",
+        "nosotros": "cogemos",
+        "vosotros": "cogéis",
+        "ellos": "cogen"
+      }
+    },
+    "conocer": {
+      "type": "unregelmäßig (yo: -zco)",
+      "meaning_de": "kennen",
+      "presente": {
+        "yo": "conozco",
+        "tu": "conoces",
+        "el_ella_usted": "conoce",
+        "nosotros": "conocemos",
+        "vosotros": "conocéis",
+        "ellos": "conocen"
+      }
+    },
+    "estar": {
+      "type": "unregelmäßig",
+      "meaning_de": "sein (Zustand/Ort)",
+      "presente": {
+        "yo": "estoy",
+        "tu": "estás",
+        "el_ella_usted": "está",
+        "nosotros": "estamos",
+        "vosotros": "estáis",
+        "ellos": "están"
+      }
+    },
+    "hacer": {
+      "type": "unregelmäßig",
+      "meaning_de": "machen/tun",
+      "presente": {
+        "yo": "hago",
+        "tu": "haces",
+        "el_ella_usted": "hace",
+        "nosotros": "hacemos",
+        "vosotros": "hacéis",
+        "ellos": "hacen"
+      }
+    },
+    "poner": {
+      "type": "unregelmäßig",
+      "meaning_de": "stellen/legen/setzen",
+      "presente": {
+        "yo": "pongo",
+        "tu": "pones",
+        "el_ella_usted": "pone",
+        "nosotros": "ponemos",
+        "vosotros": "ponéis",
+        "ellos": "ponen"
+      }
+    },
+    "saber": {
+      "type": "unregelmäßig",
+      "meaning_de": "wissen/schmecken",
+      "presente": {
+        "yo": "sé",
+        "tu": "sabes",
+        "el_ella_usted": "sabe",
+        "nosotros": "sabemos",
+        "vosotros": "sabéis",
+        "ellos": "saben"
+      }
+    },
+    "salir": {
+      "type": "unregelmäßig",
+      "meaning_de": "ausgehen/hinausgehen",
+      "presente": {
+        "yo": "salgo",
+        "tu": "sales",
+        "el_ella_usted": "sale",
+        "nosotros": "salimos",
+        "vosotros": "salís",
+        "ellos": "salen"
+      }
+    },
+    "ser": {
+      "type": "unregelmäßig",
+      "meaning_de": "sein (Identität)",
+      "presente": {
+        "yo": "soy",
+        "tu": "eres",
+        "el_ella_usted": "es",
+        "nosotros": "somos",
+        "vosotros": "sois",
+        "ellos": "son"
+      }
+    },
+    "tener": {
+      "type": "unregelmäßig",
+      "meaning_de": "haben",
+      "presente": {
+        "yo": "tengo",
+        "tu": "tienes",
+        "el_ella_usted": "tiene",
+        "nosotros": "tenemos",
+        "vosotros": "tenéis",
+        "ellos": "tienen"
+      }
+    },
+    "ver": {
+      "type": "unregelmäßig",
+      "meaning_de": "sehen",
+      "presente": {
+        "yo": "veo",
+        "tu": "ves",
+        "el_ella_usted": "ve",
+        "nosotros": "vemos",
+        "vosotros": "veis",
+        "ellos": "ven"
+      }
+    },
+    "aburrirse": {
+      "type": "reflexiv, regelmäßig -ir",
+      "meaning_de": "sich langweilen",
+      "presente": {
+        "yo": "me aburro",
+        "tu": "te aburres",
+        "el_ella_usted": "se aburre",
+        "nosotros": "nos aburrimos",
+        "vosotros": "os aburrís",
+        "ellos": "se aburren"
+      }
+    },
+    "acostarse": {
+      "type": "reflexiv, o→ue",
+      "meaning_de": "sich hinlegen/schlafen gehen",
+      "presente": {
+        "yo": "me acuesto",
+        "tu": "te acuestas",
+        "el_ella_usted": "se acuesta",
+        "nosotros": "nos acostamos",
+        "vosotros": "os acostáis",
+        "ellos": "se acuestan"
+      }
+    },
+    "despertarse": {
+      "type": "reflexiv, e→ie",
+      "meaning_de": "aufwachen",
+      "presente": {
+        "yo": "me despierto",
+        "tu": "te despiertas",
+        "el_ella_usted": "se despierta",
+        "nosotros": "nos despertamos",
+        "vosotros": "os despertáis",
+        "ellos": "se despiertan"
+      }
+    },
+    "desvestirse": {
+      "type": "reflexiv, e→i",
+      "meaning_de": "sich ausziehen",
+      "presente": {
+        "yo": "me desvisto",
+        "tu": "te desvistes",
+        "el_ella_usted": "se desviste",
+        "nosotros": "nos desvestimos",
+        "vosotros": "os desvestís",
+        "ellos": "se desvisten"
+      }
+    },
+    "dormirse": {
+      "type": "reflexiv, o→ue",
+      "meaning_de": "einschlafen",
+      "presente": {
+        "yo": "me duermo",
+        "tu": "te duermes",
+        "el_ella_usted": "se duerme",
+        "nosotros": "nos dormimos",
+        "vosotros": "os dormís",
+        "ellos": "se duermen"
+      }
+    },
+    "ducharse": {
+      "type": "reflexiv, regelmäßig -ar",
+      "meaning_de": "duschen",
+      "presente": {
+        "yo": "me ducho",
+        "tu": "te duchas",
+        "el_ella_usted": "se ducha",
+        "nosotros": "nos duchamos",
+        "vosotros": "osducháis",
+        "ellos": "se duchan"
+      }
+    },
+    "lavarse": {
+      "type": "reflexiv, regelmäßig -ar",
+      "meaning_de": "sich waschen",
+      "presente": {
+        "yo": "me lavo",
+        "tu": "te lavas",
+        "el_ella_usted": "se lava",
+        "nosotros": "nos lavamos",
+        "vosotros": "os laváis",
+        "ellos": "se lavan"
+      }
+    },
+    "levantarse": {
+      "type": "reflexiv, regelmäßig -ar",
+      "meaning_de": "aufstehen",
+      "presente": {
+        "yo": "me levanto",
+        "tu": "te levantas",
+        "el_ella_usted": "se levanta",
+        "nosotros": "nos levantamos",
+        "vosotros": "os levantáis",
+        "ellos": "se levantan"
+      }
+    },
+    "limpiarse": {
+      "type": "reflexiv, regelmäßig -ar",
+      "meaning_de": "sich putzen",
+      "presente": {
+        "yo": "me limpio",
+        "tu": "te limpias",
+        "el_ella_usted": "se limpia",
+        "nosotros": "nos limpiamos",
+        "vosotros": "os limpiáis",
+        "ellos": "se limpian"
+      }
+    },
+    "mudarse": {
+      "type": "reflexiv, regelmäßig -ar",
+      "meaning_de": "umziehen",
+      "presente": {
+        "yo": "me mudo",
+        "tu": "te mudas",
+        "el_ella_usted": "se muda",
+        "nosotros": "nos mudamos",
+        "vosotros": "os mudáis",
+        "ellos": "se mudan"
+      }
+    },
+    "peinarse": {
+      "type": "reflexiv, regelmäßig -ar",
+      "meaning_de": "sich kämmen",
+      "presente": {
+        "yo": "me peino",
+        "tu": "te peinas",
+        "el_ella_usted": "se peina",
+        "nosotros": "nos peinamos",
+        "vosotros": "os peináis",
+        "ellos": "se peinan"
+      }
+    },
+    "ponerse": {
+      "type": "reflexiv, unregelmäßig",
+      "meaning_de": "sich anziehen/werden",
+      "presente": {
+        "yo": "me pongo",
+        "tu": "te pones",
+        "el_ella_usted": "se pone",
+        "nosotros": "nos ponemos",
+        "vosotros": "os ponéis",
+        "ellos": "se ponen"
+      }
+    },
+    "presentarse": {
+      "type": "reflexiv, regelmäßig -ar",
+      "meaning_de": "sich vorstellen",
+      "presente": {
+        "yo": "me presento",
+        "tu": "te presentas",
+        "el_ella_usted": "se presenta",
+        "nosotros": "nos presentamos",
+        "vosotros": "os presentáis",
+        "ellos": "se presentan"
+      }
+    },
+    "reírse": {
+      "type": "reflexiv, e→i (+Sonderform)",
+      "meaning_de": "lachen",
+      "presente": {
+        "yo": "me río",
+        "tu": "te ríes",
+        "el_ella_usted": "se ríe",
+        "nosotros": "nos reímos",
+        "vosotros": "os reís",
+        "ellos": "se ríen"
+      }
+    },
+    "vestirse": {
+      "type": "reflexiv, e→i",
+      "meaning_de": "sich anziehen",
+      "presente": {
+        "yo": "me visto",
+        "tu": "te vistes",
+        "el_ella_usted": "se viste",
+        "nosotros": "nos vestimos",
+        "vosotros": "os vestís",
+        "ellos": "se visten"
+      }
+    }
+  }
+}

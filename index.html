@@ -291,10 +291,47 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 .shake{animation:shake .3s ease}
 @keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
 .pop{animation:pop .22s ease}
+
+/* ══ BURGER-MENÜ ═══════════════════════════════════════════ */
+.burger-btn{position:fixed;top:16px;right:16px;z-index:200;width:42px;height:42px;
+  border-radius:12px;background:var(--surface2);border:1px solid var(--surface3);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;
+  color:var(--text2);transition:background .15s}
+.burger-btn:active{background:var(--surface3)}
+.menu-overlay{position:fixed;inset:0;background:rgba(4,20,31,.72);z-index:199;
+  opacity:0;pointer-events:none;transition:opacity .2s}
+.menu-overlay.open{opacity:1;pointer-events:auto}
+.menu-drawer{position:fixed;top:0;right:0;height:100%;width:78%;max-width:300px;
+  background:var(--surface);border-left:1px solid var(--surface3);z-index:200;
+  transform:translateX(100%);transition:transform .25s ease;
+  padding:70px 18px 24px;display:flex;flex-direction:column;gap:8px;box-sizing:border-box}
+.menu-drawer.open{transform:translateX(0)}
+.menu-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:10px;
+  background:var(--surface2);border:1px solid var(--surface3);color:var(--text2);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px}
+.menu-title{font-family:'DM Serif Display',serif;font-size:20px;color:var(--accent2);
+  margin-bottom:10px;padding:0 4px}
+.menu-link{display:flex;align-items:center;gap:12px;padding:14px 14px;background:var(--surface2);
+  border-radius:var(--radius-sm,12px);color:var(--text);text-decoration:none;
+  font-size:15px;font-weight:500;font-family:'DM Sans',sans-serif}
+.menu-link:active{background:var(--surface3)}
+.menu-link.active{border:1px solid var(--accent);color:var(--accent2)}
+.menu-link .emoji{font-size:18px}
 </style>
 </head>
 <body>
 <div id="app">
+
+<!-- ══ BURGER-MENÜ ══════════════════════════════ -->
+<button class="burger-btn" id="burger-btn" onclick="toggleMenu(true)" aria-label="Menü öffnen">☰</button>
+<div class="menu-overlay" id="menu-overlay" onclick="toggleMenu(false)"></div>
+<nav class="menu-drawer" id="menu-drawer">
+  <button class="menu-close" onclick="toggleMenu(false)" aria-label="Menü schließen">✕</button>
+  <div class="menu-title">Wave 🌊</div>
+  <a class="menu-link active" href="index.html"><span class="emoji">🏠</span> Training</a>
+  <a class="menu-link" href="woerterbuch.html"><span class="emoji">📖</span> Mini-Wörterbuch</a>
+  <a class="menu-link" href="konjugation.html"><span class="emoji">🔤</span> Konjugationen</a>
+</nav>
 
 <!-- ══ HOME ══════════════════════════════════════════════════ -->
 <div id="screen-home" class="screen active">
@@ -478,6 +515,12 @@ html,body{height:100%;width:100%;overflow:hidden;background:var(--bg);color:var(
 </div>
 
 <script>
+// ══ MENÜ ════════════════════════════════════════════
+function toggleMenu(open){
+  document.getElementById('menu-overlay').classList.toggle('open', open);
+  document.getElementById('menu-drawer').classList.toggle('open', open);
+}
+
 // ══ VOCAB ═════════════════════════════════════════════════════
 const FALLBACK = {
   1:[{es:"hola",de:"hallo"},{es:"buenos días",de:"guten Morgen"},{es:"¿cómo te llamas?",de:"wie heißt du?"},{es:"me llamo…",de:"ich heiße…"},{es:"soy de…",de:"ich komme aus…"},{es:"hablar",de:"sprechen"},{es:"escuchar",de:"hören"},{es:"adiós",de:"auf Wiedersehen"},{es:"¿cuántos años tienes?",de:"wie alt bist du?"},{es:"tengo … años",de:"ich bin … Jahre alt"}],

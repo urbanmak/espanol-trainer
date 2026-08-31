@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wave · Konjugations-Cluster · Presente</title>
+<style>
+  :root {
+    --bg: #04141f; --surface: #072233; --surface2: #0d3047; --surface3: #143d57;
+    --accent: #38c9b0; --accent2: #7ee8d8;
+    --text: #e8f4f8; --text2: #7eb8cc; --text3: #3d7a8f;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:'DM Sans',-apple-system,Segoe UI,Roboto,sans-serif; }
+  header { padding: 26px 20px 16px; border-bottom:1px solid var(--surface3); position: sticky; top:0; background:var(--bg); z-index:5;}
+  h1 { margin:0 0 4px; font-family:'DM Serif Display',serif; font-size:26px; }
+  h1 span { color:var(--accent); font-style: italic;}
+  .sub { color:var(--text3); font-size:13px; margin-bottom:16px; }
+  .nav { display:flex; flex-wrap:wrap; gap:8px; }
+  .navchip { background:var(--surface); border:1px solid var(--surface3); color:var(--text2);
+    padding:6px 12px; border-radius:999px; font-size:12.5px; text-decoration:none; white-space:nowrap; }
+  .navchip:hover { border-color:var(--accent); color:var(--text); }
+  .navcount { color:var(--text3); }
+  main { max-width: 760px; margin: 0 auto; padding: 10px 20px 70px; }
+  .group-title { font-family:'DM Serif Display',serif; font-size:19px; color:var(--accent2);
+    margin: 40px 0 14px; padding-top: 8px; border-top: 1px solid var(--surface2); }
+  .group-title:first-of-type { border-top:none; margin-top: 20px; }
+  .group-count { font-family:'DM Sans',sans-serif; font-size:12px; color:var(--text3); font-weight: normal; margin-left:6px;}
+  .verbcard { background: var(--surface); border:1px solid var(--surface2); border-radius:16px; padding:14px 16px; margin-bottom:12px; }
+  .verbhead { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px; flex-wrap:wrap; gap:4px 10px;}
+  .inf { font-family:'DM Serif Display',serif; font-style:italic; font-size:18px; color:var(--text); }
+  .meaning { color:var(--text3); font-size:13px; }
+  .forms { display:grid; grid-template-columns: 1fr 1fr; gap:6px 14px; }
+  .form { display:flex; justify-content:space-between; background:var(--surface2); border-radius:8px; padding:6px 10px; font-size:13.5px;}
+  .pron { color:var(--text3); }
+  .conj { color:var(--accent2); font-weight:600; }
+  footer { text-align:center; color:var(--text3); font-size:11px; padding: 20px; }
+
+  .burger-btn{position:fixed;top:16px;right:16px;z-index:200;width:42px;height:42px;
+    border-radius:12px;background:var(--surface2);border:1px solid var(--surface3);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;
+    color:var(--text2);transition:background .15s}
+  .burger-btn:active{background:var(--surface3)}
+  .menu-overlay{position:fixed;inset:0;background:rgba(4,20,31,.72);z-index:199;
+    opacity:0;pointer-events:none;transition:opacity .2s}
+  .menu-overlay.open{opacity:1;pointer-events:auto}
+  .menu-drawer{position:fixed;top:0;right:0;height:100%;width:78%;max-width:300px;
+    background:var(--surface);border-left:1px solid var(--surface3);z-index:200;
+    transform:translateX(100%);transition:transform .25s ease;
+    padding:70px 18px 24px;display:flex;flex-direction:column;gap:8px;box-sizing:border-box}
+  .menu-drawer.open{transform:translateX(0)}
+  .menu-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:10px;
+    background:var(--surface2);border:1px solid var(--surface3);color:var(--text2);
+    display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px}
+  .menu-title{font-family:'DM Serif Display',serif;font-size:20px;color:var(--accent2);
+    margin-bottom:10px;padding:0 4px}
+  .menu-link{display:flex;align-items:center;gap:12px;padding:14px 14px;background:var(--surface2);
+    border-radius:var(--radius-sm,12px);color:var(--text);text-decoration:none;
+    font-size:15px;font-weight:500;font-family:'DM Sans',sans-serif}
+  .menu-link:active{background:var(--surface3)}
+  .menu-link.active{border:1px solid var(--accent);color:var(--accent2)}
+  .menu-link .emoji{font-size:18px}
+</style>
+</head>
+<body>
+<button class="burger-btn" id="burger-btn" onclick="toggleMenu(true)" aria-label="Menü öffnen">☰</button>
+<div class="menu-overlay" id="menu-overlay" onclick="toggleMenu(false)"></div>
+<nav class="menu-drawer" id="menu-drawer">
+  <button class="menu-close" onclick="toggleMenu(false)" aria-label="Menü schließen">✕</button>
+  <div class="menu-title">Wave 🌊</div>
+  <a class="menu-link " href="index.html"><span class="emoji">🏠</span> Training</a>
+  <a class="menu-link " href="woerterbuch.html"><span class="emoji">📖</span> Mini-Wörterbuch</a>
+  <a class="menu-link active" href="konjugation.html"><span class="emoji">🔤</span> Konjugationen</a>
+</nav>
+
+<header>
+  <h1>Wave <span>Konjugations-Cluster</span></h1>
+  <div class="sub">Presente de Indicativo · 85 Verben aus Caminos 1 (U1–U6) · aus vocab.json extrahiert</div>
+  <div class="nav"><a href="#reflexiv" class="navchip">🔄 reflexiv <span class="navcount">15</span></a><a href="#Stammbrechung_e-ie" class="navchip">⚡ Stammbrechung e→ie <span class="navcount">4</span></a><a href="#Stammbrechung_o-ue" class="navchip">⚡ Stammbrechung o→ue <span class="navcount">8</span></a><a href="#Stammbrechung_e-i" class="navchip">⚡ Stammbrechung e→i <span class="navcount">2</span></a><a href="#unregelmäßig" class="navchip">⭐ unregelmäßig <span class="navcount">11</span></a><a href="#regelmäßig_-ar" class="navchip">✅ regelmäßig -ar <span class="navcount">37</span></a><a href="#regelmäßig_-er" class="navchip">✅ regelmäßig -er <span class="navcount">5</span></a><a href="#regelmäßig_-ir" class="navchip">✅ regelmäßig -ir <span class="navcount">3</span></a></div>
+</header>
+<main><h2 id="reflexiv" class="group-title">🔄 reflexiv <span class="group-count">15 Verben</span></h2>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">aburrirse</span>
+            <span class="meaning">sich langweilen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me aburro</span></div><div class="form"><span class="pron">tú</span><span class="conj">te aburres</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se aburre</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos aburrimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os aburrís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se aburren</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">acostarse</span>
+            <span class="meaning">sich hinlegen/schlafen gehen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me acuesto</span></div><div class="form"><span class="pron">tú</span><span class="conj">te acuestas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se acuesta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos acostamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os acostáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se acuestan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">despertarse</span>
+            <span class="meaning">aufwachen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me despierto</span></div><div class="form"><span class="pron">tú</span><span class="conj">te despiertas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se despierta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos despertamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os despertáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se despiertan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">desvestirse</span>
+            <span class="meaning">sich ausziehen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me desvisto</span></div><div class="form"><span class="pron">tú</span><span class="conj">te desvistes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se desviste</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos desvestimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os desvestís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se desvisten</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">dormirse</span>
+            <span class="meaning">einschlafen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me duermo</span></div><div class="form"><span class="pron">tú</span><span class="conj">te duermes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se duerme</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos dormimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os dormís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se duermen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">ducharse</span>
+            <span class="meaning">duschen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me ducho</span></div><div class="form"><span class="pron">tú</span><span class="conj">te duchas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se ducha</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos duchamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">osducháis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se duchan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">lavarse</span>
+            <span class="meaning">sich waschen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me lavo</span></div><div class="form"><span class="pron">tú</span><span class="conj">te lavas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se lava</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos lavamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os laváis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se lavan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">levantarse</span>
+            <span class="meaning">aufstehen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me levanto</span></div><div class="form"><span class="pron">tú</span><span class="conj">te levantas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se levanta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos levantamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os levantáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se levantan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">limpiarse</span>
+            <span class="meaning">sich putzen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me limpio</span></div><div class="form"><span class="pron">tú</span><span class="conj">te limpias</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se limpia</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos limpiamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os limpiáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se limpian</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">mudarse</span>
+            <span class="meaning">umziehen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me mudo</span></div><div class="form"><span class="pron">tú</span><span class="conj">te mudas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se muda</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos mudamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os mudáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se mudan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">peinarse</span>
+            <span class="meaning">sich kämmen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me peino</span></div><div class="form"><span class="pron">tú</span><span class="conj">te peinas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se peina</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos peinamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os peináis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se peinan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">ponerse</span>
+            <span class="meaning">sich anziehen/werden</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me pongo</span></div><div class="form"><span class="pron">tú</span><span class="conj">te pones</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se pone</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos ponemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os ponéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se ponen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">presentarse</span>
+            <span class="meaning">sich vorstellen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me presento</span></div><div class="form"><span class="pron">tú</span><span class="conj">te presentas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se presenta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos presentamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os presentáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se presentan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">reírse</span>
+            <span class="meaning">lachen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me río</span></div><div class="form"><span class="pron">tú</span><span class="conj">te ríes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se ríe</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos reímos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os reís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se ríen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">vestirse</span>
+            <span class="meaning">sich anziehen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">me visto</span></div><div class="form"><span class="pron">tú</span><span class="conj">te vistes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">se viste</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">nos vestimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">os vestís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">se visten</span></div></div>
+        </div><h2 id="Stammbrechung_e-ie" class="group-title">⚡ Stammbrechung e→ie <span class="group-count">4 Verben</span></h2>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">cerrar</span>
+            <span class="meaning">schließen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">cierro</span></div><div class="form"><span class="pron">tú</span><span class="conj">cierras</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">cierra</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">cerramos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">cerráis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">cierran</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">extender</span>
+            <span class="meaning">ausdehnen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">extiendo</span></div><div class="form"><span class="pron">tú</span><span class="conj">extiendes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">extiende</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">extendemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">extendéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">extienden</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">pensar</span>
+            <span class="meaning">denken</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">pienso</span></div><div class="form"><span class="pron">tú</span><span class="conj">piensas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">piensa</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">pensamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">pensáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">piensan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">querer</span>
+            <span class="meaning">wollen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">quiero</span></div><div class="form"><span class="pron">tú</span><span class="conj">quieres</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">quiere</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">queremos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">queréis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">quieren</span></div></div>
+        </div><h2 id="Stammbrechung_o-ue" class="group-title">⚡ Stammbrechung o→ue <span class="group-count">8 Verben</span></h2>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">almorzar</span>
+            <span class="meaning">zu Mittag essen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">almuerzo</span></div><div class="form"><span class="pron">tú</span><span class="conj">almuerzas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">almuerza</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">almorzamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">almorzáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">almuerzan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">colgar</span>
+            <span class="meaning">aufhängen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">cuelgo</span></div><div class="form"><span class="pron">tú</span><span class="conj">cuelgas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">cuelga</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">colgamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">colgáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">cuelgan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">contar</span>
+            <span class="meaning">zählen/erzählen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">cuento</span></div><div class="form"><span class="pron">tú</span><span class="conj">cuentas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">cuenta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">contamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">contáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">cuentan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">costar</span>
+            <span class="meaning">kosten</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">cuesto</span></div><div class="form"><span class="pron">tú</span><span class="conj">cuestas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">cuesta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">costamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">costáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">cuestan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">encontrar</span>
+            <span class="meaning">finden/treffen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">encuentro</span></div><div class="form"><span class="pron">tú</span><span class="conj">encuentras</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">encuentra</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">encontramos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">encontráis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">encuentran</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">soler</span>
+            <span class="meaning">gewohnt sein etw. zu tun</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">suelo</span></div><div class="form"><span class="pron">tú</span><span class="conj">sueles</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">suele</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">solemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">soléis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">suelen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">sonar</span>
+            <span class="meaning">klingen/läuten</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">sueno</span></div><div class="form"><span class="pron">tú</span><span class="conj">suenas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">suena</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">sonamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">sonáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">suenan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">volver</span>
+            <span class="meaning">zurückkommen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">vuelvo</span></div><div class="form"><span class="pron">tú</span><span class="conj">vuelves</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">vuelve</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">volvemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">volvéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">vuelven</span></div></div>
+        </div><h2 id="Stammbrechung_e-i" class="group-title">⚡ Stammbrechung e→i <span class="group-count">2 Verben</span></h2>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">pedir</span>
+            <span class="meaning">bestellen/bitten</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">pido</span></div><div class="form"><span class="pron">tú</span><span class="conj">pides</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">pide</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">pedimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">pedís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">piden</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">seguir</span>
+            <span class="meaning">folgen/weitermachen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">sigo</span></div><div class="form"><span class="pron">tú</span><span class="conj">sigues</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">sigue</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">seguimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">seguís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">siguen</span></div></div>
+        </div><h2 id="unregelmäßig" class="group-title">⭐ unregelmäßig <span class="group-count">11 Verben</span></h2>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">coger</span>
+            <span class="meaning">nehmen (Verkehrsmittel)</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">cojo</span></div><div class="form"><span class="pron">tú</span><span class="conj">coges</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">coge</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">cogemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">cogéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">cogen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">conocer</span>
+            <span class="meaning">kennen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">conozco</span></div><div class="form"><span class="pron">tú</span><span class="conj">conoces</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">conoce</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">conocemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">conocéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">conocen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">estar</span>
+            <span class="meaning">sein (Zustand/Ort)</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">estoy</span></div><div class="form"><span class="pron">tú</span><span class="conj">estás</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">está</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">estamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">estáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">están</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">hacer</span>
+            <span class="meaning">machen/tun</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">hago</span></div><div class="form"><span class="pron">tú</span><span class="conj">haces</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">hace</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">hacemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">hacéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">hacen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">poner</span>
+            <span class="meaning">stellen/legen/setzen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">pongo</span></div><div class="form"><span class="pron">tú</span><span class="conj">pones</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">pone</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">ponemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">ponéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">ponen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">saber</span>
+            <span class="meaning">wissen/schmecken</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">sé</span></div><div class="form"><span class="pron">tú</span><span class="conj">sabes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">sabe</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">sabemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">sabéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">saben</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">sacar</span>
+            <span class="meaning">herausnehmen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">saco</span></div><div class="form"><span class="pron">tú</span><span class="conj">sacas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">saca</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">sacamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">sacáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">sacan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">salir</span>
+            <span class="meaning">ausgehen/hinausgehen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">salgo</span></div><div class="form"><span class="pron">tú</span><span class="conj">sales</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">sale</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">salimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">salís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">salen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">ser</span>
+            <span class="meaning">sein (Identität)</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">soy</span></div><div class="form"><span class="pron">tú</span><span class="conj">eres</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">es</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">somos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">sois</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">son</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">tener</span>
+            <span class="meaning">haben</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">tengo</span></div><div class="form"><span class="pron">tú</span><span class="conj">tienes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">tiene</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">tenemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">tenéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">tienen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">ver</span>
+            <span class="meaning">sehen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">veo</span></div><div class="form"><span class="pron">tú</span><span class="conj">ves</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">ve</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">vemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">veis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">ven</span></div></div>
+        </div><h2 id="regelmäßig_-ar" class="group-title">✅ regelmäßig -ar <span class="group-count">37 Verben</span></h2>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">aceptar</span>
+            <span class="meaning">annehmen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">acepto</span></div><div class="form"><span class="pron">tú</span><span class="conj">aceptas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">acepta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">aceptamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">aceptáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">aceptan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">admirar</span>
+            <span class="meaning">bewundern</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">admiro</span></div><div class="form"><span class="pron">tú</span><span class="conj">admiras</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">admira</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">admiramos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">admiráis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">admiran</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">alquilar</span>
+            <span class="meaning">mieten</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">alquilo</span></div><div class="form"><span class="pron">tú</span><span class="conj">alquilas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">alquila</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">alquilamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">alquiláis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">alquilan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">cambiar</span>
+            <span class="meaning">wechseln</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">cambio</span></div><div class="form"><span class="pron">tú</span><span class="conj">cambias</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">cambia</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">cambiamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">cambiáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">cambian</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">cenar</span>
+            <span class="meaning">zu Abend essen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">ceno</span></div><div class="form"><span class="pron">tú</span><span class="conj">cenas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">cena</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">cenamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">cenáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">cenan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">charlar</span>
+            <span class="meaning">plaudern</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">charlo</span></div><div class="form"><span class="pron">tú</span><span class="conj">charlas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">charla</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">charlamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">charláis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">charlan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">cobrar</span>
+            <span class="meaning">kassieren</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">cobro</span></div><div class="form"><span class="pron">tú</span><span class="conj">cobras</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">cobra</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">cobramos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">cobráis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">cobran</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">cocinar</span>
+            <span class="meaning">kochen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">cocino</span></div><div class="form"><span class="pron">tú</span><span class="conj">cocinas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">cocina</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">cocinamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">cocináis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">cocinan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">desayunar</span>
+            <span class="meaning">frühstücken</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">desayuno</span></div><div class="form"><span class="pron">tú</span><span class="conj">desayunas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">desayuna</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">desayunamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">desayunáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">desayunan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">descansar</span>
+            <span class="meaning">sich erholen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">descanso</span></div><div class="form"><span class="pron">tú</span><span class="conj">descansas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">descansa</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">descansamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">descansáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">descansan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">disfrutar</span>
+            <span class="meaning">genießen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">disfruto</span></div><div class="form"><span class="pron">tú</span><span class="conj">disfrutas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">disfruta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">disfrutamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">disfrutáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">disfrutan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">echar</span>
+            <span class="meaning">werfen/vermissen(echar de menos)</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">echo</span></div><div class="form"><span class="pron">tú</span><span class="conj">echas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">echa</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">echamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">echáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">echan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">escuchar</span>
+            <span class="meaning">hören/zuhören</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">escucho</span></div><div class="form"><span class="pron">tú</span><span class="conj">escuchas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">escucha</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">escuchamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">escucháis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">escuchan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">excusar</span>
+            <span class="meaning">entschuldigen (⚠ meist reflexiv: excusarse)</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">excuso</span></div><div class="form"><span class="pron">tú</span><span class="conj">excusas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">excusa</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">excusamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">excusáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">excusan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">girar</span>
+            <span class="meaning">abbiegen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">giro</span></div><div class="form"><span class="pron">tú</span><span class="conj">giras</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">gira</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">giramos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">giráis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">giran</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">gustar</span>
+            <span class="meaning">gefallen (⚠ meist unpersönlich: me/te/le gusta)</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">gusto</span></div><div class="form"><span class="pron">tú</span><span class="conj">gustas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">gusta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">gustamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">gustáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">gustan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">hablar</span>
+            <span class="meaning">sprechen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">hablo</span></div><div class="form"><span class="pron">tú</span><span class="conj">hablas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">habla</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">hablamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">habláis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">hablan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">lavar</span>
+            <span class="meaning">waschen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">lavo</span></div><div class="form"><span class="pron">tú</span><span class="conj">lavas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">lava</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">lavamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">laváis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">lavan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">limpiar</span>
+            <span class="meaning">putzen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">limpio</span></div><div class="form"><span class="pron">tú</span><span class="conj">limpias</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">limpia</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">limpiamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">limpiáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">limpian</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">llegar</span>
+            <span class="meaning">ankommen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">llego</span></div><div class="form"><span class="pron">tú</span><span class="conj">llegas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">llega</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">llegamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">llegáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">llegan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">observar</span>
+            <span class="meaning">beobachten</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">observo</span></div><div class="form"><span class="pron">tú</span><span class="conj">observas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">observa</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">observamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">observáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">observan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">opinar</span>
+            <span class="meaning">meinen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">opino</span></div><div class="form"><span class="pron">tú</span><span class="conj">opinas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">opina</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">opinamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">opináis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">opinan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">ordenar</span>
+            <span class="meaning">aufräumen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">ordeno</span></div><div class="form"><span class="pron">tú</span><span class="conj">ordenas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">ordena</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">ordenamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">ordenáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">ordenan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">pagar</span>
+            <span class="meaning">bezahlen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">pago</span></div><div class="form"><span class="pron">tú</span><span class="conj">pagas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">paga</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">pagamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">pagáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">pagan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">participar</span>
+            <span class="meaning">teilnehmen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">participo</span></div><div class="form"><span class="pron">tú</span><span class="conj">participas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">participa</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">participamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">participáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">participan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">pasar</span>
+            <span class="meaning">verbringen/vorbeigehen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">paso</span></div><div class="form"><span class="pron">tú</span><span class="conj">pasas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">pasa</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">pasamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">pasáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">pasan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">perdonar</span>
+            <span class="meaning">verzeihen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">perdono</span></div><div class="form"><span class="pron">tú</span><span class="conj">perdonas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">perdona</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">perdonamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">perdonáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">perdonan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">planchar</span>
+            <span class="meaning">bügeln</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">plancho</span></div><div class="form"><span class="pron">tú</span><span class="conj">planchas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">plancha</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">planchamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">plancháis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">planchan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">presentar</span>
+            <span class="meaning">vorstellen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">presento</span></div><div class="form"><span class="pron">tú</span><span class="conj">presentas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">presenta</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">presentamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">presentáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">presentan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">quedar</span>
+            <span class="meaning">sich treffen/bleiben</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">quedo</span></div><div class="form"><span class="pron">tú</span><span class="conj">quedas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">queda</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">quedamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">quedáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">quedan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">regalar</span>
+            <span class="meaning">schenken</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">regalo</span></div><div class="form"><span class="pron">tú</span><span class="conj">regalas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">regala</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">regalamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">regaláis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">regalan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">repasar</span>
+            <span class="meaning">wiederholen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">repaso</span></div><div class="form"><span class="pron">tú</span><span class="conj">repasas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">repasa</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">repasamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">repasáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">repasan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">saludar</span>
+            <span class="meaning">grüßen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">saludo</span></div><div class="form"><span class="pron">tú</span><span class="conj">saludas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">saluda</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">saludamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">saludáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">saludan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">tomar</span>
+            <span class="meaning">nehmen/trinken</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">tomo</span></div><div class="form"><span class="pron">tú</span><span class="conj">tomas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">toma</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">tomamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">tomáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">toman</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">trabajar</span>
+            <span class="meaning">arbeiten</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">trabajo</span></div><div class="form"><span class="pron">tú</span><span class="conj">trabajas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">trabaja</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">trabajamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">trabajáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">trabajan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">usar</span>
+            <span class="meaning">benutzen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">uso</span></div><div class="form"><span class="pron">tú</span><span class="conj">usas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">usa</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">usamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">usáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">usan</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">visitar</span>
+            <span class="meaning">besuchen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">visito</span></div><div class="form"><span class="pron">tú</span><span class="conj">visitas</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">visita</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">visitamos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">visitáis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">visitan</span></div></div>
+        </div><h2 id="regelmäßig_-er" class="group-title">✅ regelmäßig -er <span class="group-count">5 Verben</span></h2>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">aprender</span>
+            <span class="meaning">lernen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">aprendo</span></div><div class="form"><span class="pron">tú</span><span class="conj">aprendes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">aprende</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">aprendemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">aprendéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">aprenden</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">comer</span>
+            <span class="meaning">essen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">como</span></div><div class="form"><span class="pron">tú</span><span class="conj">comes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">come</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">comemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">coméis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">comen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">depender</span>
+            <span class="meaning">abhängen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">dependo</span></div><div class="form"><span class="pron">tú</span><span class="conj">dependes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">depende</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">dependemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">dependéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">dependen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">leer</span>
+            <span class="meaning">lesen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">leo</span></div><div class="form"><span class="pron">tú</span><span class="conj">lees</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">lee</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">leemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">leéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">leen</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">romper</span>
+            <span class="meaning">kaputt machen</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">rompo</span></div><div class="form"><span class="pron">tú</span><span class="conj">rompes</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">rompe</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">rompemos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">rompéis</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">rompen</span></div></div>
+        </div><h2 id="regelmäßig_-ir" class="group-title">✅ regelmäßig -ir <span class="group-count">3 Verben</span></h2>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">descubrir</span>
+            <span class="meaning">entdecken</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">descubro</span></div><div class="form"><span class="pron">tú</span><span class="conj">descubres</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">descubre</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">descubrimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">descubrís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">descubren</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">permitir</span>
+            <span class="meaning">erlauben</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">permito</span></div><div class="form"><span class="pron">tú</span><span class="conj">permites</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">permite</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">permitimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">permitís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">permiten</span></div></div>
+        </div>
+        <div class="verbcard">
+          <div class="verbhead">
+            <span class="inf">vivir</span>
+            <span class="meaning">wohnen/leben</span>
+          </div>
+          <div class="forms"><div class="form"><span class="pron">yo</span><span class="conj">vivo</span></div><div class="form"><span class="pron">tú</span><span class="conj">vives</span></div><div class="form"><span class="pron">él/ella/usted</span><span class="conj">vive</span></div><div class="form"><span class="pron">nosotros/as</span><span class="conj">vivimos</span></div><div class="form"><span class="pron">vosotros/as</span><span class="conj">vivís</span></div><div class="form"><span class="pron">ellos/as/ustedes</span><span class="conj">viven</span></div></div>
+        </div></main>
+<footer>Wave · Grammatik-Referenz · Basis für zukünftigen Grammatik-Modus in der App</footer>
+<script>
+function toggleMenu(open){
+  document.getElementById('menu-overlay').classList.toggle('open', open);
+  document.getElementById('menu-drawer').classList.toggle('open', open);
+}
+</script></body>
+</html>
